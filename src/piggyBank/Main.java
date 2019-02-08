@@ -1,5 +1,7 @@
 package piggyBank;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -21,5 +23,13 @@ public class Main {
             System.out.println(m);
         }
 
+        double piggyBankSum = 0.0;
+
+        for(AbstractMoney m: piggyBank) {
+            piggyBankSum += m.getDouble();
+        }
+
+        System.out.println("\nThe piggy bank holds $" + piggyBankSum);
+        }
     }
-}
+

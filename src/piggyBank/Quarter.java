@@ -11,4 +11,8 @@ public class Quarter extends AbstractMoney{
         return name;
     }
 
+    public double getDouble() {
+        return (double)money * .25;
+    }
+
 }

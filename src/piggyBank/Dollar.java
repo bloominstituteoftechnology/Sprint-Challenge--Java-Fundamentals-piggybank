@@ -10,4 +10,8 @@ public class Dollar extends AbstractMoney{
     public String getName() {
         return name;
     }
+
+    public double getDouble() {
+        return (double)money;
+    }
 }

@@ -10,4 +10,8 @@ public class Dime extends AbstractMoney{
     public String getName() {
         return name;
     }
+
+    public double getDouble() {
+        return (double)money * .1;
+    }
 }
