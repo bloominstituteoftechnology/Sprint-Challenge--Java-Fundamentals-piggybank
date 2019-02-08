@@ -22,7 +22,7 @@ public class Quarter implements Coin {
 
     @Override
     public String getName() {
-        return "Quarter";
+        return this.amount +" Quarter";
     }
 
     @Override

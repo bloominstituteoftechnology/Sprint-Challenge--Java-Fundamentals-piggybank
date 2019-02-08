@@ -22,7 +22,7 @@ public class Penny implements Coin {
 
     @Override
     public String getName() {
-        return "Penny";
+        return this.amount + " Penny";
     }
 
     @Override

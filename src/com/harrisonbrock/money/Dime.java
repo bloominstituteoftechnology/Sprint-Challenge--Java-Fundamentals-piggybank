@@ -22,7 +22,7 @@ public class Dime implements Coin {
 
     @Override
     public String getName() {
-        return "Dime";
+        return this.amount + " Dime";
     }
 
     @Override

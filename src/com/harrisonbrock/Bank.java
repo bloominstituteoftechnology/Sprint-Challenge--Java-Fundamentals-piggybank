@@ -15,7 +15,7 @@ public class Bank {
     }
 
     public void add(Coin money) {
-        orderMoneyInserted.add(Integer.toString(money.amountInserted()) + " " + money.getName());
+        orderMoneyInserted.add(money.getName());
         this.totalAmount += money.getAmount();
     }
 

@@ -22,7 +22,7 @@ public class Dollar implements Coin {
 
     @Override
     public String getName() {
-        return "Dollar";
+        return "$" + getAmount();
     }
 
     @Override
