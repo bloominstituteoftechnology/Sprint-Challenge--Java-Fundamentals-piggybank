@@ -1,3 +1,5 @@
+package com.lambdaschool;
+
 public class PiggyBank
 {
     private int myPennies;
