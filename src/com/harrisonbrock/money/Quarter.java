@@ -1,16 +1,16 @@
 package com.harrisonbrock.money;
 
-public class Quater implements Coin {
+public class Quarter implements Coin {
     private double totalAmount;
     private int amount;
     private final double VALUE = 0.25;
 
-    public Quater() {
+    public Quarter() {
         amount = 1;
         this.totalAmount = amount * VALUE;
     }
 
-    public Quater(int amount) {
+    public Quarter(int amount) {
         this.amount = amount;
         this.totalAmount= amount * VALUE;
     }

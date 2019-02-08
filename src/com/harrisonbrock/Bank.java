@@ -21,5 +21,8 @@ public class Bank {
 
     public void print() {
         orderMoneyInserted.forEach(money -> System.out.println(money));
+
+        System.out.println("The piggy bank holds: " + "$" + this.totalAmount);
     }
+
 }
