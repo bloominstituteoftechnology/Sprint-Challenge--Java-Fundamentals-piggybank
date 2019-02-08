@@ -7,13 +7,13 @@ public class Main {
     public static void main(String[] args) {
 
         Bank bank = new Bank();
-        bank.add(new Quarter());
-        bank.add(new Dime());
-        bank.add(new Dollar(5));
-        bank.add(new Nickle(3));
-        bank.add(new Dime(7));
-        bank.add(new Dollar());
-        bank.add(new Penny(10));
+        bank.add(CoinFactory.addMoney("Quarter"));
+        bank.add(CoinFactory.addMoney("Dime"));
+        bank.add(CoinFactory.addMoney("Dollar", 5));
+        bank.add(CoinFactory.addMoney("Nickle", 3));
+        bank.add(CoinFactory.addMoney("Dime", 7));
+        bank.add(CoinFactory.addMoney("Dollar"));
+        bank.add(CoinFactory.addMoney("Penny", 10));
         bank.print();
     }
 }
