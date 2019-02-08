@@ -15,6 +15,14 @@ public class Main
         piggyBank.add(new Dollar());
         piggyBank.add(new Penny(10));
 
+        piggyBank.forEach((i) -> System.out.println(i));
+
+        double total = 0;
+        for (PiggyBank j : piggyBank)
+        {
+            total += j.getQuant() * j.getValue();
+        }
+
     System.out.println("The piggy bank holds $" + total);
     }
 }
