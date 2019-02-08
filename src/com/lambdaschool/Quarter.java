@@ -2,18 +2,14 @@ package com.lambdaschool;
 
 public class Quarter extends AbstractMoney
 {
-    Quarter()
+    public Quarter()
     {
-        super(1);
-        setName("Quarter");
-        setValue(.25);
+        super(1, "Quarter", .25);
     }
 
-    Quarter(int count)
+    public Quarter(int count)
     {
-        super(count);
-        setName("Quarter");
-        setValue(.25);
+        super(count, "Quarter", .25);
     }
 
     @Override

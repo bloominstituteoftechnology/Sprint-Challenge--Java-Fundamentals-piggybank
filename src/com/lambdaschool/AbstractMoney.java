@@ -6,9 +6,11 @@ public class AbstractMoney
     private String name;
     private int count;
 
-    AbstractMoney(int count)
+    AbstractMoney(int count, String name, double value)
     {
         this.count += count;
+        this.name = name;
+        this.value = value;
     }
 
     public double getValue()
@@ -16,28 +18,13 @@ public class AbstractMoney
         return value;
     }
 
-    public void setValue(double value)
-    {
-        this.value = value;
-    }
-
     public String getName()
     {
         return name;
     }
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
-
     public int getCount()
     {
         return count;
-    }
-
-    public void setCount(int count)
-    {
-        this.count = count;
     }
 }

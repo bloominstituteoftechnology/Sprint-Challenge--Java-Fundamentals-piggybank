@@ -2,18 +2,14 @@ package com.lambdaschool;
 
 public class Nickle extends AbstractMoney
 {
-    Nickle()
+    public Nickle()
     {
-        super(1);
-        setName("Nickel");
-        setValue(.05);
+        super(1, "Nickel", .05);
     }
 
-    Nickle(int count)
+    public Nickle(int count)
     {
-        super(count);
-        setName("Nickel");
-        setValue(.05);
+        super(count, "Nickel", .05);
     }
 
     @Override

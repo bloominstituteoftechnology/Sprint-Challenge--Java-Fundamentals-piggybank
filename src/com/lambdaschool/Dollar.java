@@ -2,18 +2,14 @@ package com.lambdaschool;
 
 public class Dollar extends AbstractMoney
 {
-    Dollar()
+    public Dollar()
     {
-        super(1);
-        setName("Dollar");
-        setValue(1.00);
+        super(1, "Dollar", 1.00);
     }
 
-    Dollar(int count)
+    public Dollar(int count)
     {
-        super(count);
-        setName("Dollar");
-        setValue(1.00);
+        super(count, "Dollar", 1.00);
     }
 
     @Override

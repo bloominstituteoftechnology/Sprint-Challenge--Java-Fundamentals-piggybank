@@ -2,18 +2,14 @@ package com.lambdaschool;
 
 public class Penny extends AbstractMoney
 {
-    Penny()
+    public Penny()
     {
-        super(1);
-        setName("Penny");
-        setValue(.01);
+        super(1, "Penny", .01);
     }
 
-    Penny(int count)
+    public Penny(int count)
     {
-        super(count);
-        setName("Penny");
-        setValue(.01);
+        super(count, "Penny", .01);
     }
 
     @Override

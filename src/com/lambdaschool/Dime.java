@@ -2,18 +2,14 @@ package com.lambdaschool;
 
 public class Dime extends AbstractMoney
 {
-    Dime()
+    public Dime()
     {
-        super(1);
-        setName("Dime");
-        setValue(.10);
+        super(1, "Dime", .10);
     }
 
-    Dime(int count)
+    public Dime(int count)
     {
-        super(count);
-        setName("Dime");
-        setValue(.10);
+        super(count, "Dime", .10);
     }
 
     @Override
