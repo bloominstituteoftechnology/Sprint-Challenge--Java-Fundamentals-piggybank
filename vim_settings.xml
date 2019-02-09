@@ -1,0 +1,132 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="/Dummy.txt" timestamp="1549340319186">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/transportationVideo/src/com/lambdaschool/HourseFromVehicle.java" timestamp="1549508259328">
+        <mark key="[" line="2" column="29" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/WordCount/src/collections/Main.java" timestamp="1549447552728">
+        <mark key="]" line="36" column="0" />
+        <mark key="." line="36" column="0" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/transportationVideo/src/com/lambdaschool/Vehicle.java" timestamp="1549502459389">
+        <mark key="[" line="4" column="0" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/piggybank/src/com/lambdaschool/Main.java" timestamp="1549689931155">
+        <mark key="'" line="17" column="41" />
+        <mark key="[" line="8" column="0" />
+        <mark key="]" line="8" column="6" />
+        <mark key="." line="8" column="6" />
+      </file>
+      <file name="/a.dummy" timestamp="1549686144873">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$APPLICATION_CONFIG_DIR$/scratches/Learning" timestamp="1549446701788">
+        <mark key="[" line="0" column="17" />
+        <mark key="]" line="0" column="46" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/piggybank/src/com/lambdaschool/Dollar.java" timestamp="1549688441860">
+        <mark key="[" line="19" column="18" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/piggybank/src/com/lambdaschool/Dime.java" timestamp="1549683112234" />
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/piggybank/src/com/lambdaschool/Nickle.java" timestamp="1549686197784">
+        <mark key="[" line="18" column="30" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/piggybank/src/com/lambdaschool/PiggyBank.java" timestamp="1549661916857">
+        <mark key="[" line="3" column="0" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/transportationVideo/src/com/lambdaschool/Animal.java" timestamp="1549494640911">
+        <mark key="[" line="4" column="0" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/transportationVideo/src/com/lambdaschool/Horse.java" timestamp="1549505885645">
+        <mark key="[" line="2" column="17" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/transportationVideo/src/com/lambdaschool/Main.java" timestamp="1549506935139">
+        <mark key="[" line="7" column="0" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/piggybank/src/com/lambdaschool/Quarter.java" timestamp="1549685393985">
+        <mark key="[" line="18" column="20" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/transportationVideo/src/com/lambdaschool/AbstractVehicle.java" timestamp="1549507565222">
+        <mark key="[" line="5" column="0" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/piggybank/src/com/lambdaschool/Penny.java" timestamp="1549689179062">
+        <mark key="[" line="18" column="25" />
+        <mark key="]" line="18" column="29" />
+        <mark key="." line="18" column="25" />
+      </file>
+      <file name="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/piggybank/src/com/lambdaschool/Money.java" timestamp="1549689820182">
+        <mark key="[" line="4" column="11" />
+      </file>
+      <file name="/fragment.java" timestamp="1549444099408">
+        <mark key="[" line="0" column="0" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="16" column="41" filename="$USER_HOME$/LambdaSchool/JAVA5WEEKS/projects/piggybank/src/com/lambdaschool/Main.java" />
+    </jumps>
+    <registers>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgICAgICBmb3IgKGludCBpID0gMDsgaSA8IChuIC0gMSk7IGkrKykge2EgPX0K</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text>Dime</text>
+      </register>
+      <register name="-" type="4">
+        <text>Dime</text>
+      </register>
+    </registers>
+    <search>
+      <last-dir>0</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search />
+      <history-cmd />
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed V</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed I</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed D</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed B</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed C</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed W</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed Y</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed P</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed Q</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed S</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed X</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed A</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>

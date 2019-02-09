@@ -1,0 +1,11 @@
+<code_scheme name="Default" version="173">
+  <codeStyleSettings language="JAVA">
+    <option name="BRACE_STYLE" value="2" />
+    <option name="CLASS_BRACE_STYLE" value="2" />
+    <option name="METHOD_BRACE_STYLE" value="2" />
+    <option name="LAMBDA_BRACE_STYLE" value="2" />
+    <indentOptions>
+      <option name="TAB_SIZE" value="6" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>
