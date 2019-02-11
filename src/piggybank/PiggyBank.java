@@ -2,13 +2,15 @@ package piggybank;
 
 public class PiggyBank {
   // Money will be an interface class for the types of money
-  private HashMap<Money, Integer> money;
+  private HashMap<String, Integer> money = new HashMap<>();
 
   public String add(Money tender) {
-    // if money does not already have tender, create a new key for that tender (initialized to 0)
+    if (!money.containsKey(tender.name)) {
+      money.put(tender.name, 0);
+    }
     
-    // add its stored amount
-    // return tender and its amount added
+    money.put(tender.name, tender.amount);
+    return tender.toString();
   }
 
   private static double getDollars() {
