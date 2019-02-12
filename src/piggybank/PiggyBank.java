@@ -1,31 +1,28 @@
 package piggybank;
 
+import java.text.DecimalFormat;
 import java.util.HashMap;
 
 public class PiggyBank {
+  static DecimalFormat decimal = new DecimalFormat("##.00");
   // Money will be an interface class for the types of money
   private HashMap<String, Integer> money = new HashMap<>();
+  private double total = 0;
 
-  public String add(Money tender) {
+  public void add(Money tender) {
     String name = tender.getName();
+
     if (!money.containsKey(name)) {
       money.put(name, 0);
     }
     
     money.put(name, money.get(name) + tender.getAmount());
-    return tender.toString();
-  }
+    total += tender.getDollarAmount();
 
-  private static double getDollars() {
-    // if dollars in money, set dollars variable to be that amount
-    // else set dollars variable to be 0
-
-    // add coinage into total dollars amount
-    // return total dollars
-    return 0;
+    System.out.println(tender.toString());
   }
 
   public String getMoney() {
-    return "The piggy bank holds $" + getDollars();
+    return "The piggy bank holds $" + decimal.format(total);
   }
 }

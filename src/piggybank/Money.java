@@ -1,8 +1,12 @@
 package piggybank;
 
+import java.text.DecimalFormat;
+
 // Should this be abstract or should its children classes just extend it?
 // Let's see if I have a reason for an abstract method.
 public class Money {
+  static DecimalFormat decimal = new DecimalFormat("##");
+
   private String name;
   private double value;
   private int amount;
@@ -33,6 +37,10 @@ public class Money {
 
   public double getDollarAmount() {
     return value * amount;
+  }
+
+  public String getDollarString() {
+    return decimal.format(value * amount);
   }
 
   @Override

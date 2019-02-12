@@ -2,6 +2,8 @@ package piggybank;
 
 public class Main {
   public static void main(String[] args) {
+    System.out.println();
+
     PiggyBank piggyBank = new PiggyBank();
     
     piggyBank.add(new Quarter());
@@ -11,6 +13,8 @@ public class Main {
     piggyBank.add(new Dime(7));
     piggyBank.add(new Dollar());
     piggyBank.add(new Penny(10));
+
+    System.out.println();
 
     System.out.println(piggyBank.getMoney());
   }
