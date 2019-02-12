@@ -1,5 +1,7 @@
 package piggybank;
 
+import java.util.HashMap;
+
 public class PiggyBank {
   // Money will be an interface class for the types of money
   private HashMap<String, Integer> money = new HashMap<>();
@@ -19,6 +21,7 @@ public class PiggyBank {
 
     // add coinage into total dollars amount
     // return total dollars
+    return 0;
   }
 
   public String getMoney() {
