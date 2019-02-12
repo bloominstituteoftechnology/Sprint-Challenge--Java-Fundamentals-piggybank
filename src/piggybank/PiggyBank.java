@@ -7,11 +7,12 @@ public class PiggyBank {
   private HashMap<String, Integer> money = new HashMap<>();
 
   public String add(Money tender) {
-    if (!money.containsKey(tender.name)) {
-      money.put(tender.name, 0);
+    String name = tender.getName();
+    if (!money.containsKey(name)) {
+      money.put(name, 0);
     }
     
-    money.put(tender.name, tender.amount);
+    money.put(name, money.get(name) + tender.getAmount());
     return tender.toString();
   }
 

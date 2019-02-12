@@ -2,9 +2,38 @@ package piggybank;
 
 // Should this be abstract or should its children classes just extend it?
 // Let's see if I have a reason for an abstract method.
-public abstract class Money {
+public class Money {
   private String name;
+  private double value;
   private int amount;
+
+  public Money(String name, double value) {
+    this.name = name;
+    this.value = value;
+    amount = 1;
+  }
+
+  public Money(String name, double value, int amount) {
+    this.name = name;
+    this.value = value;
+    this.amount = amount;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public double getValue() {
+    return value;
+  }
+
+  public int getAmount() {
+    return amount;
+  }
+
+  public double getDollarAmount() {
+    return value * amount;
+  }
 
   @Override
   public String toString() {
