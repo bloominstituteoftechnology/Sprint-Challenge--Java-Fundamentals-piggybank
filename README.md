@@ -32,3 +32,5 @@ The main program will look something like this pseudocode (remember pseudocode i
   * on the console should appear  
     `The piggy bank holds $7.3`  
   * Note: do not worry about the format of the 7.2 Either 7.2 or 7.20 would be correct. Also notice that we are not concerned with adding the S for plurals with our names of our coins.
+
+fin
