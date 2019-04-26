@@ -45,6 +45,21 @@ public abstract class Money
 		return this.value * this.amountStored;
 	};
 
+	public int getAmountStored()
+	{
+		return amountStored;
+	}
+
+	public void setAmountStored(int amountStored)
+	{
+		this.amountStored = amountStored;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
 	@Override
 	public String toString()
 	{
