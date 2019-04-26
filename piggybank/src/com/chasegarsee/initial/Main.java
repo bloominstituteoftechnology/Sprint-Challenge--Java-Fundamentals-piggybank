@@ -9,6 +9,7 @@ public class Main
         ArrayList<Money> piggyBank = new ArrayList<>();
 
         piggyBank.add(new Dollar(5));
+        piggyBank.add(new Quarter(1));
 
         piggyBank.forEach(piggy -> System.out.println(piggy.stringValue()));
 

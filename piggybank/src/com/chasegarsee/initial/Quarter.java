@@ -1,11 +1,11 @@
 package com.chasegarsee.initial;
 
-public class Dollar extends Money
+public class Quarter extends Money
 {
-    public Dollar(int count)
+    public Quarter(int count)
     {
         super(count);
-        value = 1.0;
+        value = 0.25;
     }
 
     @Override
