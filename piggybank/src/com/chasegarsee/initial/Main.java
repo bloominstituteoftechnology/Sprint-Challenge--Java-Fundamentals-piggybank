@@ -11,6 +11,7 @@ public class Main
         piggyBank.add(new Dollar(5));
         piggyBank.add(new Quarter(1));
         piggyBank.add(new Dime(17));
+        piggyBank.add(new Nickel(55));
 
         piggyBank.forEach(piggy -> System.out.println(piggy.stringValue()));
 
