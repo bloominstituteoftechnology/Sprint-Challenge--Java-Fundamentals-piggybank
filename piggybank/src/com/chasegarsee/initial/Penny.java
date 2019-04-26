@@ -2,9 +2,9 @@ package com.chasegarsee.initial;
 
 public class Penny extends Money
 {
-    public Penny(int count)
+    public Penny(int count, int reducedCount)
     {
-        super(count);
+        super(count, reducedCount);
         value = 1.0;
     }
 

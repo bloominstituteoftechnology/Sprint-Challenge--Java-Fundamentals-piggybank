@@ -2,9 +2,9 @@ package com.chasegarsee.initial;
 
 public class Nickel extends Money
 {
-    public Nickel(int count)
+    public Nickel(int count, int reducedCount)
     {
-        super(count);
+        super(count, reducedCount);
         value = 0.05;
     }
 

@@ -2,9 +2,9 @@ package com.chasegarsee.initial;
 
 public class Quarter extends Money
 {
-    public Quarter(int count)
+    public Quarter(int count, int reducedCount)
     {
-        super(count);
+        super(count, reducedCount);
         value = 0.25;
     }
 

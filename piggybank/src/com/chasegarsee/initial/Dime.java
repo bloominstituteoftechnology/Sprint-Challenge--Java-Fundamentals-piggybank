@@ -2,9 +2,9 @@ package com.chasegarsee.initial;
 
 public class Dime extends Money
 {
-    public Dime(int count)
+    public Dime(int count, int reducedCount)
     {
-        super(count);
+        super(count, reducedCount);
         value = 0.10;
     }
 

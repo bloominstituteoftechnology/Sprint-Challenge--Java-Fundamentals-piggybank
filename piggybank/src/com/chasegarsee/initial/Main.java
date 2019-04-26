@@ -8,13 +8,12 @@ public class Main
     {
         ArrayList<Money> piggyBank = new ArrayList<>();
 
-        piggyBank.add(new Dollar(5));
-        piggyBank.add(new Quarter(1));
-        piggyBank.add(new Dime(17));
-        piggyBank.add(new Nickel(55));
-        piggyBank.add(new Penny(12));
+        piggyBank.add(new Dollar(5, 1));
+        piggyBank.add(new Quarter(1, 0));
+        piggyBank.add(new Dime(17, 0));
+        piggyBank.add(new Nickel(55, 0));
+        piggyBank.add(new Penny(12, 0));
 
-        piggyBank.remove(new Dollar(-2));
 
         piggyBank.forEach(piggy -> System.out.println(piggy.stringValue()));
 
@@ -24,8 +23,19 @@ public class Main
             myPiggies = myPiggies + m.getValue();
         }
 
-
+        double notMyPiggies = 0.0;
+        for (Money m : piggyBank)
+        {
+            notMyPiggies = myPiggies - notMyPiggies - m.getReducedValue();
+        }
+        System.out.println("*****************************");
+        System.out.println('\n');
         System.out.println("MY PIGGIE HAS $" + myPiggies);
-
+        System.out.println('\n');
+        System.out.println("*****************************");
+        System.out.println('\n');
+        System.out.println("MY PIGGIE NOW HAS $" + notMyPiggies);
+        System.out.println('\n');
+        System.out.println("*****************************");
     }
 }
