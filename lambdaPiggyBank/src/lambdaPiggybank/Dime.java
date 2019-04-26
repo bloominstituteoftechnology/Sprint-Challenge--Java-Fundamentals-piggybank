@@ -9,29 +9,16 @@ public class Dime extends Money
 
 	public Dime()
 	{
-		super.setName("Dime");
-		this.name = super.getName();
-		originalDeposit = 1;
-		amountStored = 1;
+		//set values is a higher order function that calls setters with the passed in arguments
+
+		super.setValues("Dime", 0.10, 1, 1);
+
 	}
 
 	public Dime(int amountToAdd)
 	{
-		super.setName("Dime");
-		this.name = super.getName();
-		this.amountStored = amountStored + amountToAdd;
-		this.originalDeposit = amountToAdd;
+		super.setValues("Quarter", 0.25, amountToAdd, amountToAdd);
 	}
 
-	@Override
-	public double tally()
-	{
-		return value * amountStored;
-	}
 
-	@Override
-	public String toString()
-	{
-		return amountStored + " " + name + "\n";
-	}
 }

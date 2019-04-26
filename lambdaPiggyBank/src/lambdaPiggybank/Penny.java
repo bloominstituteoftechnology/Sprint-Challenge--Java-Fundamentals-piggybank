@@ -2,36 +2,19 @@ package lambdaPiggybank;
 
 public class Penny extends Money
 {
-	private String name;
-	private double value = 1;
-	private int amountStored;
-	private int originalDeposit;
 
 	public Penny()
 	{
-		super.setName("Penny");
-		this.name = super.getName();
-		originalDeposit = 1;
-		amountStored = 1;
+		//set values is a higher order function that calls setters with the passed in arguments
+
+		super.setValues("Nickel", 0.01, 1,1);
+
 	}
 
 	public Penny(int amountToAdd)
 	{
-		super.setName("Penny");
-		this.name = super.getName();
-		this.amountStored = amountStored + amountToAdd;
-		this.originalDeposit = amountToAdd;
+		super.setValues("Penny", 0.01, amountToAdd, amountToAdd);
+
 	}
 
-	@Override
-	public double tally()
-	{
-		return amountStored * value;
-	}
-
-	@Override
-	public String toString()
-	{
-		return amountStored + " " + name + "\n";
-	}
 }

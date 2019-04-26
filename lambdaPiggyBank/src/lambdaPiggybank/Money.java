@@ -21,25 +21,38 @@ public abstract class Money
 {
 
 	private String name;
+	private double value;
+	private int amountStored;
+	private int originalDeposit;
 
 	public Money()
 	{
 
-		this.name = name;
 	}
 
-	public String getName()
-	{
-		return name;
-	}
-
-	public void setName(String name)
+	//takes in parameters to alter variables
+	public void setValues(String name, double value, int amountStored, int originalDeposit)
 	{
 		this.name = name;
+		this.value = value;
+		this.amountStored = amountStored;
+		this.originalDeposit = originalDeposit;
 	}
 
+	//gets a total worth of items
+	public double tally()
+	{
+		return this.value * this.amountStored;
+	};
 
-	public abstract double tally();
-
-
+	@Override
+	public String toString()
+	{
+		if (amountStored > 1)
+		{
+			return "\n" + amountStored + " " + name + "'s";
+		} else {
+			return "\n" + amountStored + " " + name;
+		}
+	}
 }

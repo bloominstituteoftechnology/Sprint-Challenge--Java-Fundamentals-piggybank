@@ -9,29 +9,17 @@ public class Dollar extends Money
 
 	public Dollar()
 	{
-		super.setName("Dollar");
-		this.name = super.getName();
-		originalDeposit = 1;
-		amountStored = 1;
+		//set values is a higher order function that calls setters with the passed in arguments
+
+		super.setValues("Dollar", 1, 1, 1);
+
 	}
 
 	public Dollar(int amountToAdd)
 	{
-		super.setName("Dollar");
-		this.name = super.getName();
-		this.amountStored = amountStored + amountToAdd;
-		this.originalDeposit = amountToAdd;
+		super.setValues("Dollar", 1, amountToAdd, amountToAdd);
 	}
 
-	@Override
-	public double tally()
-	{
-		return amountStored * value;
-	}
 
-	@Override
-	public String toString()
-	{
-		return "$" + amountStored + "\n";
-	}
+
 }
