@@ -1,17 +1,17 @@
 package com.chasegarsee.initial;
 
-public class Quarter extends Money
+public class Penny extends Money
 {
-    public Quarter(int count)
+    public Penny(int count)
     {
         super(count);
-        value = 0.25;
+        value = 1.0;
     }
 
     @Override
     public String stringValue()
     {
-        return "Number of Quarters - " + count;
+        return "Number of Pennies - " + count;
     }
 
     @Override
@@ -19,5 +19,4 @@ public class Quarter extends Money
     {
         return super.toString();
     }
-
 }

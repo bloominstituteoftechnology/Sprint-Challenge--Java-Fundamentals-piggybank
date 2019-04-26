@@ -11,7 +11,7 @@ public class Dime extends Money
     @Override
     public String stringValue()
     {
-        return "$$ " + count;
+        return "Number of Dimes - " + count;
     }
 
     @Override

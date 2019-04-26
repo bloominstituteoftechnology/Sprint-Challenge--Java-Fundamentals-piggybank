@@ -11,7 +11,7 @@ public class Dollar extends Money
     @Override
     public String stringValue()
     {
-        return "$$ " + count;
+        return "Number of Dollars - " + count;
     }
 
     @Override

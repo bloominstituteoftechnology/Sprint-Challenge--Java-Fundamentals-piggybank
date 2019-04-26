@@ -11,7 +11,7 @@ public class Nickel extends Money
     @Override
     public String stringValue()
     {
-        return "$$ " + count;
+        return "Number of Nickels - " + count;
     }
 
     @Override
