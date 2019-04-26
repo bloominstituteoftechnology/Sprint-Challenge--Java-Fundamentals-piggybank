@@ -1,9 +1,23 @@
 package com.chasegarsee.initial;
 
+import java.util.ArrayList;
+
 public class Main
 {
     public static void main(String[] args)
     {
+        ArrayList<Money> piggyBank = new ArrayList<>();
 
+        piggyBank.add(new Dollar(5));
+
+        piggyBank.forEach(piggy -> System.out.println(piggy.stringValue()));
+
+        double myPiggies = 0.0;
+        for (Money m : piggyBank)
+        {
+            myPiggies = myPiggies + m.getValue();
+        }
+
+        System.out.println("MY PIGGIE HAS $" + myPiggies);
     }
 }
