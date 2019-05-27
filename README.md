@@ -1,6 +1,6 @@
 # Introduction
 
-This sprint challenge combines the knowledge from this week's Java Fundamentals lessons in order to create a Magical Piggy Bank using Java and the IntelliJ IDEA IDE.
+This sprint challenge combines the knowledge from this week's Java Fundamentals lessons in order to create a Magical Piggy Bank using Java and the JDK.
 
 # Instructions
 
@@ -36,10 +36,10 @@ The main program will look something like this pseudocode (remember pseudocode i
     `1 Quarter`  
     `1 Dime`  
     `$5`  
-    `3 Nickel`  
-    `7 Dime`  
+    `3 Nickels`  
+    `7 Dimes`  
     `$1`  
-    `10 Penny`  
+    `10 Pennies`  
     
 * Print the value of the Piggy Bank
   * on the console should appear  
@@ -54,12 +54,11 @@ The main program will look something like this pseudocode (remember pseudocode i
           * When you ready to print out the piggy bank value, use a statement like  
           `System.out.println("The piggy bank holds " + fp.format(myValue));`  
 
-      * Also notice that we are not concerned with adding the S for plurals with our names of our coins.
+      * Also notice that when you have more than 1 coin, the pural of the coins name is printed.
 
 
 ## Stretch Goals:
 
-* Add the plurals for the name of the coin when more than one coin is in the object.
 * Add the ability to remove coins from the piggy bank
     * Prevent taking more coins than present in the piggy bank
     * Coins do not have to be removed in the same quantity that were added. For example based on the main program above, removing 3 dimes would be allowed. The Piggy Bank should adjust appropriately.
