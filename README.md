@@ -66,7 +66,7 @@ The main program will look something like this pseudocode (remember pseudocode i
     
     * subtract(1.50)
     * print contents of the Piggy Bank
-      * on the console on possible out come is
+      * on the console on possible out come is  
         `$4`  
         `7 Dimes`  
         `$1`  
