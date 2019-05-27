@@ -62,4 +62,5 @@ The main program will look something like this pseudocode (remember pseudocode i
 * Add the ability to remove coins from the piggy bank
     * Prevent taking more coins than present in the piggy bank
     * Coins do not have to be removed in the same quantity that were added. For example based on the main program above, removing 3 dimes would be allowed. The Piggy Bank should adjust appropriately.
+    * Just the amount to be removed should be given. The program will figure out which coins to remove.
     
