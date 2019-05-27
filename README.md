@@ -64,3 +64,12 @@ The main program will look something like this pseudocode (remember pseudocode i
     * Coins do not have to be removed in the same quantity that were added. For example based on the main program above, removing 3 dimes would be allowed. The Piggy Bank should adjust appropriately.
     * Just the amount to be removed should be given. The program will figure out which coins to remove.
     
+    * subtract(1.50)
+    * print contents of the Piggy Bank
+      * on the console on possible out come is
+        `$4`  
+        `7 Dimes`  
+        `$1`  
+        `10 Pennies`  
+        
+        
