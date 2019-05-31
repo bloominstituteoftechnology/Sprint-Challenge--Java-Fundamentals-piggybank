@@ -21,5 +21,18 @@ public class Main
 		Penny penny = new Penny(10);
 		
 		System.out.println("*** National Bank of Pig ***");
+
+		ArrayList<MoneyActions> outOfNames = new ArrayList<MoneyActions>();
+		NationalBankOfPig theBank = new NationalBankOfPig(outOfNames);
+
+		outOfNames.add(quarter);
+		outOfNames.add(dime);
+		theBank.addSomeData(dollar);
+		outOfNames.add(nickel);
+		outOfNames.add(dime2);
+		theBank.addSomeData(dollar2);
+		outOfNames.add(penny);
+
+		System.out.println(theBank.getData().toString());
 	}
 }

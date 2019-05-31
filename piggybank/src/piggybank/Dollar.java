@@ -28,6 +28,6 @@ public class Dollar extends MoneyActions{
 	@Override
 	public String toString()
 	{
-		return "$" + value + ". \n" ;
+		return "$" + ammount + ". \n" ;
 	};
 }

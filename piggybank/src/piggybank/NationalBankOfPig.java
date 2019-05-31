@@ -5,35 +5,35 @@ import java.util.ArrayList;
 public class NationalBankOfPig{
 
 	private double value;
-	private ArrayList<AbstractMoney> arrayOfData;
+	private ArrayList<MoneyActions> data;
 
-	public double findTheValue(ArrayList<ChangeActions> toarray){
-		for (ChangeActions money : toArray) {
+	public double findTheValue(ArrayList<MoneyActions> toArray){
+		for (MoneyActions money : toArray) {
 			value += money.getValue();
 			// https://www.tutorialspoint.com/java/java_assignment_operators_examples.htm
-		};
+		}
 		return value;
 	};
 
-	public NationalBankOfPig(ArrayList<ChangeActions> arrayOfData)
+	public NationalBankOfPig(ArrayList<MoneyActions> data)
 	{
-		this.arrayOfData = arrayOfData;
-		this.value = findTheValue(arrayOfData);
+		this.data = data;
+		this.value = findTheValue(data);
 	};
 
-	public ArrayList<ChangeActions> getData()
+	public ArrayList<MoneyActions> getData()
 	{
-		return arrayOfData;
+		return data;
 	};
 
 	public double getValue()
 	{
 		this.value = 0.0;
-		return findValue(arrayOfData);
+		return findTheValue(data);
 	};
 
-	public void addSomeData(ChangeActions money)
+	public void addSomeData(MoneyActions money)
 	{
-		this.arrayOfData.add(money);
+		this.data.add(money);
 	};
 };

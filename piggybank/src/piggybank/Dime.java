@@ -8,7 +8,7 @@ public class Dime extends ChangeActions{
 	public Dime(int ammount)
 	{
 		this.ammount = ammount;
-		this.value = value * .10 ;
+		this.value = value * 0.10 ;
 	};
 
 	@Override
@@ -29,7 +29,7 @@ public class Dime extends ChangeActions{
 	};
 
 	@Override
-	public String tosString()
+	public String toString()
 	{
 		return ammount + "Dime/s" + "\n";
 		//https://www.tutorialspoint.com/java/java_basic_operators.htm
