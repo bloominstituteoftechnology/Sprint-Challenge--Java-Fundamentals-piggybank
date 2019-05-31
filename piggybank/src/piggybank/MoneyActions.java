@@ -10,6 +10,9 @@ public abstract class MoneyActions {
 		// ++ increments by 1
 	}
 
-	public abstract int getAmmount();
-	public
+	public abstract double getAmmount();
+	public abstract int getValue();
+	public int getId(){
+		return id;
+	}
 }
