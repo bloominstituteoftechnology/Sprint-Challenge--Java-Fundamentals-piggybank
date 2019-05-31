@@ -7,12 +7,14 @@ public abstract class MoneyActions {
 	public abstract int getAmmount();
 	public abstract double getValue();
 	
-	public MoneyActions(){
+	public MoneyActions()
+	{
 		this.id = maxId++;
 		// ++ increments by 1
-	}
+	};
 
-	public int getId(){
+	public int getId()
+	{
 		return id;
-	}
+	};
 }

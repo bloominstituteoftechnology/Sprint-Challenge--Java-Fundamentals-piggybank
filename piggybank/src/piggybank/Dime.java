@@ -5,27 +5,32 @@ public class Dime extends ChangeActions{
 	private double value;
 	private int ammount;
 
-	public Dime(int ammount){
+	public Dime(int ammount)
+	{
 		this.ammount = ammount;
 		this.value = value * .10 ;
 	};
 
 	@Override
-	public double getValue(){
+	public double getValue()
+	{
 		return value;
 	};
 
 	@Override
-	public int getAmmount(){
+	public int getAmmount()
+	{
 		return ammount;
 	};
 
-	public void setAmmount(int ammount){
+	public void setAmmount(int ammount)
+	{
 		this.ammount = ammount;
-	}
+	};
 
 	@Override
-	public String tosString(){
+	public String tosString()
+	{
 		return ammount + "Dime/s" + "\n";
 		//https://www.tutorialspoint.com/java/java_basic_operators.htm
 	};

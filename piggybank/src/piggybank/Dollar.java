@@ -7,23 +7,27 @@ public class Dollar extends MoneyActions{
 	// private values, cant be accessed or seen by other classes, ONLY the parent and or child
 
 
-	public Dollar(int ammount){
+	public Dollar(int ammount)
+	{
 		this.ammount = ammount;
-		this.value = 1.00 * ammount;
-	}
+		this.value = ammount * 1.00;
+	};
 
 	@Override
-	public double getValue(){
+	public double getValue()
+	{
 		return value;
-	}
+	};
 	
 	@Override
-	public int getAmmount(){
+	public int getAmmount()
+	{
 		return ammount;
-	}
+	};
 
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return "$" + value + ". \n" ;
-	}
+	};
 }

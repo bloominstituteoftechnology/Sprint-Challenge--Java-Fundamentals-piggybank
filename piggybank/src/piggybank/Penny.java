@@ -5,27 +5,32 @@ public class Penny extends ChangeActions{
 	private double value;
 	private int ammount;
 
-	public Penny(int ammount){
+	public Penny(int ammount)
+	{
 		this.ammount = ammount;
-		this.value = ammount * .01;
-	}
+		this.value = ammount * 0.01;
+	};
 
 	@Override
-	public int getAmmount() {
+	public int getAmmount()
+	{
 		return ammount;
-	}
+	};
 	
 	@Override
-	public double getValue(){
+	public double getValue()
+	{
 		return value;
-	}
+	};
 
-	public void setAmmount(int ammount){
+	public void setAmmount(int ammount)
+	{
 		this.ammount = ammount;
-	}
+	};
 
 	@Override
-	public String toString(){
+	public String toString()
+	{
 		return ammount + "Penny / Pennies" + "\n";
-	}
+	};
 }

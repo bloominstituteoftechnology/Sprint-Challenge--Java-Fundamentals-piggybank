@@ -5,28 +5,33 @@ public class Quarter extends ChangeActions{
 	public int ammount;
 	public double value;
 
-	public Quarter(int ammount){
+	public Quarter(int ammount)
+	{
 		this.ammount = ammount;
-		this.value = ammount * .25;
-	}
+		this.value = ammount * 0.25;
+	};
 	
 	@Override
-	public int getAmmount() {
+	public int getAmmount()
+	{
 		return ammount;
-	}
+	};
 	
 	@Override
-	public double getValue(){
+	public double getValue()
+	{
 		return value;
-	}
+	};
 
-	public void setAmmount(int ammount){
+	public void setAmmount(int ammount)
+	{
 		this.ammount = ammount;
-	}
+	};
 
 	@Override
-	public String toString(){
+	public String toString()
+	{
 		return ammount + "Quarter/s" + "\n";
-	}
+	};
 
 }

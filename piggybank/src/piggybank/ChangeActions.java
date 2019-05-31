@@ -13,5 +13,5 @@ public abstract class ChangeActions extends MoneyActions{
 
 	public String getType(){
 		return type;
-	}
+	};
 }
