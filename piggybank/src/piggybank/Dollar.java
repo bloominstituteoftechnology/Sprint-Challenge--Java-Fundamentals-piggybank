@@ -13,13 +13,13 @@ public class Dollar extends MoneyActions{
 	}
 
 	@Override
-	public double getAmmount(){
-		return ammount;
-	}
-
-	@Override
-	public int getValue(){
+	public double getValue(){
 		return value;
+	}
+	
+	@Override
+	public int getAmmount(){
+		return ammount;
 	}
 
 	@Override

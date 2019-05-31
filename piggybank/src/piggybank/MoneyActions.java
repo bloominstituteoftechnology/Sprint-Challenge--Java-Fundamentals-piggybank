@@ -4,8 +4,8 @@ public abstract class MoneyActions {
 
 	private static int maxId = 0;
 	public int id;
-	public abstract double getAmmount();
-	public abstract int getValue();
+	public abstract int getAmmount();
+	public abstract double getValue();
 	
 	public MoneyActions(){
 		this.id = maxId++;

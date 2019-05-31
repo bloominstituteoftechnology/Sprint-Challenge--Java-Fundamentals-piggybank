@@ -2,8 +2,8 @@ package piggybank;
 
 public class Dime extends ChangeActions{
 
-	public int ammount;
 	private double value;
+	private int ammount;
 
 	public Dime(int ammount){
 		this.ammount = ammount;
@@ -11,13 +11,13 @@ public class Dime extends ChangeActions{
 	};
 
 	@Override
-	public int getAmmount(){
-		return ammount;
+	public double getValue(){
+		return value;
 	};
 
 	@Override
-	public double getValue(){
-		return value;
+	public int getAmmount(){
+		return ammount;
 	};
 
 	public void setAmmount(int ammount){
