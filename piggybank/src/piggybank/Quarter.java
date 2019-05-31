@@ -1,4 +1,4 @@
-package Quarter;
+package piggybank;
 
 public class Quarter {
 	
