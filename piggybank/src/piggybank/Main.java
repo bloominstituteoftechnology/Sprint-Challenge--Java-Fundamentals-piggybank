@@ -20,19 +20,34 @@ public class Main
         Dollar dollar2 = new Dollar(1);
 		Penny penny = new Penny(10);
 		
-		System.out.println("*** National Bank of Pig ***");
-
-		ArrayList<MoneyActions> outOfNames = new ArrayList<MoneyActions>();
-		NationalBankOfPig theBank = new NationalBankOfPig(outOfNames);
-
-		outOfNames.add(quarter);
-		outOfNames.add(dime);
+		System.out.println("*** National Bank of Pig ***" + "\n");
+		
+		ArrayList<MoneyActions> theBank2 = new ArrayList<MoneyActions>();
+		NationalBankOfPig theBank = new NationalBankOfPig(theBank2);
+		
+		theBank2.add(quarter);
+		theBank2.add(dime);
 		theBank.addSomeData(dollar);
-		outOfNames.add(nickel);
-		outOfNames.add(dime2);
+		theBank2.add(nickel);
+		theBank2.add(dime2);
 		theBank.addSomeData(dollar2);
-		outOfNames.add(penny);
+		theBank2.add(penny);
 
-		System.out.println(theBank.getData().toString());
+		System.out.println("You: Hi, id like to make a withdraw");
+		System.out.println("Interaction: Points Gun at other pigs.");
+		System.out.println("Janet: puh, p p p p p please dont hurt us...");
+		System.out.println("You: Give me all the money!!!");
+		System.out.println("Janet opens the till and gives you " + theBank.getData().toString() + " totaling " + fp.format(theBank.getValue()) + ".");
+		System.out.println("Janet: This is all we have, please dont shoot");
+
+		theBank2.remove(quarter);
+		theBank2.remove(dime);
+		theBank.removeSomeData(dollar);
+		theBank2.remove(nickel);
+		theBank2.remove(dime2);
+		theBank.removeSomeData(dollar2);
+		theBank2.remove(penny);
+
+		System.out.println("Now janets till contains " + fp.format(theBank.getValue()) + " and you've sucessfully robbed a bank." + " You better run fast. " );
 	}
 }

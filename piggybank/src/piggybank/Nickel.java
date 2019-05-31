@@ -30,6 +30,6 @@ public class Nickel extends ChangeActions{
 	@Override
 	public String toString()
 	{
-		return ammount + "Nickel/s" + "\n";
+		return ammount + " Nickel/s";
 	};
 }

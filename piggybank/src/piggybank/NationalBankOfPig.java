@@ -36,4 +36,9 @@ public class NationalBankOfPig{
 	{
 		this.data.add(money);
 	};
+
+	public void removeSomeData(MoneyActions money)
+	{
+		this.data.remove(money);
+	}
 };

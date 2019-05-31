@@ -31,6 +31,6 @@ public class Penny extends ChangeActions{
 	@Override
 	public String toString()
 	{
-		return ammount + "Penny / Pennies" + "\n";
+		return ammount + " Pennies";
 	};
 }

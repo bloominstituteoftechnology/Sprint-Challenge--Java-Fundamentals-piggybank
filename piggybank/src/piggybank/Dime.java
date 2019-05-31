@@ -2,13 +2,13 @@ package piggybank;
 
 public class Dime extends ChangeActions{
 
-	private double value;
 	private int ammount;
+	private double value;
 
 	public Dime(int ammount)
 	{
 		this.ammount = ammount;
-		this.value = value * 0.10 ;
+		this.value = ammount * 0.10 ;
 	};
 
 	@Override
@@ -31,7 +31,7 @@ public class Dime extends ChangeActions{
 	@Override
 	public String toString()
 	{
-		return ammount + "Dime/s" + "\n";
+		return ammount + " Dime/s";
 		//https://www.tutorialspoint.com/java/java_basic_operators.htm
 	};
 }

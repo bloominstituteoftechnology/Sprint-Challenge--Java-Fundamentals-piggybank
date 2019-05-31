@@ -31,7 +31,7 @@ public class Quarter extends ChangeActions{
 	@Override
 	public String toString()
 	{
-		return ammount + "Quarter/s" + "\n";
+		return ammount + " Quarter/s";
 	};
 
 }
