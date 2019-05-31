@@ -20,4 +20,13 @@ public class Quarter extends ChangeActions{
 		return value;
 	}
 
+	public void setAmmount(int ammount){
+		this.ammount = ammount;
+	}
+
+	@Override
+	public String toString(){
+		return ammount + "Quarter/s" + "\n";
+	}
+
 }
