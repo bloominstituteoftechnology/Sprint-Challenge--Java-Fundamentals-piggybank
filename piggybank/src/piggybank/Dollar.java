@@ -9,10 +9,21 @@ public class Dollar extends MoneyActions{
 
 	public Dollar(int ammount){
 		this.ammount = ammount;
+		this.value = 1.00 * ammount;
 	}
 
 	@Override
 	public double getAmmount(){
 		return ammount;
+	}
+
+	@Override
+	public int getValue(){
+		return value;
+	}
+
+	@Override
+	public String toString() {
+		return "$" + value + ". \n" ;
 	}
 }
