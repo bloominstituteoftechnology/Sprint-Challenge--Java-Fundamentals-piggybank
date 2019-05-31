@@ -23,4 +23,10 @@ public class Dime extends ChangeActions{
 	public void setAmmount(int ammount){
 		this.ammount = ammount;
 	}
+
+	@Override
+	public String tosString(){
+		return ammount + "Dime/s" + "\n";
+		//https://www.tutorialspoint.com/java/java_basic_operators.htm
+	};
 }
