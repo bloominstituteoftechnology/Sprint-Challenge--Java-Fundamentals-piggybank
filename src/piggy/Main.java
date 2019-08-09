@@ -24,11 +24,15 @@ public class Main {
 		ar[4] = dime.getMore(7);
 		ar[5] = dollar.getAll();
 		ar[6] = penny.getMore(10);
-		double adding = 0;
-		for(int i = 0; i < ar.length;i++) adding +=i ;
-			System.out.println(adding);
+		double add = 0;
+		for(double i : ar){
+			add = i+add;
+			System.out.println(add);
+//			System.out.println(ar[i]);
+		};
+//			System.out.println(adding);
 		
-		//System.out.println(ar[1]);
+		System.out.println("**ALL**");
 
 		System.out.println(fp.format(ar[0]));
 		System.out.println(fp.format(ar[1]));
@@ -37,9 +41,12 @@ public class Main {
 		System.out.println(fp.format(ar[4]));
 		System.out.println(fp.format(ar[5]));
 		System.out.println(fp.format(ar[6]));
-		System.out.println(fp.format(adding));
+//		System.out.println(fp.format(adding));
 
 		System.out.println("testing ");
+
+//		HashMap<Bank,> bank2 =new HashMap<Bank,>();
+//
 
 	}
 }

@@ -1,24 +1,23 @@
 package piggy;
 
-public class Bank extends Worth{
-	public double value;
-	
-	public Bank(double value){
-		this.value = value ;
-	}
+    public class Bank extends Worth {
+        public double value;
 
-	public double getAll(){
-		return value;
-	}
+        public Bank(double var1) {
+            this.value = var1;
+        }
 
-	public double getMore(int times){
-		return value * times;
-	}
+        public double getAll() {
+            return this.value;
+        }
 
-	@Override
-	public String toString(){
-		String str = String.valueOf(value); 
-		return str;
-		// return "value"+value;
-	}
-}
+        public double getMore(int var1) {
+            return this.value * (double)var1;
+        }
+
+        public String toString() {
+            String var1 = String.valueOf(this.value);
+            return var1;
+        }
+    }
+
