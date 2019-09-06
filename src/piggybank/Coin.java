@@ -7,12 +7,12 @@ public class Coin
 {
 	//attributes
 
-	private float coinValue; 
+	private double coinValue; 
 	private int amountAdded;
-	// private float totalValue; 
+	// private double totalValue; 
 
 	//constructor 
-	public Coin(float coinValue, int amountAdded, /*float totalValue*/)
+	public Coin(double coinValue, int amountAdded, /*double totalValue*/)
 	{
 		this.coinValue = coinValue;
 		this.amountAdded = amountAdded;
@@ -21,9 +21,18 @@ public class Coin
 
 	//methods
 
-	public void setTotalValue(float coinValue, float amountAdded)
+
+
+	public void totalValue(double coinValue, int amountAdded)
 	{
+		int amountAdded = amountAdded;
+
+		totalValue = Double(amountAdded) * coinValue;
+	
 		
+
+		System.out.println("Within Coin.java!")
+		System.out.println(totalValue)
 	}
 
 }
