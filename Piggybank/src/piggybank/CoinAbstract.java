@@ -37,9 +37,19 @@ public abstract class CoinAbstract
     }
 
     public String getAmount() {
-        if (this.amount > 1 )
+        if (this.name == "Dollar") {
+            return "$" + this.amount;
+        }
+        else if (this.amount > 1 )
         {
-            return this.amount + " " + this.name + "s";
+            if (this.name == "Penny")
+            {
+                return this.amount + " Pennies";
+            }
+            else
+            {
+                return this.amount + " " + this.name + "s";
+            }
         }
         else
         {
@@ -49,5 +59,11 @@ public abstract class CoinAbstract
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    @Override
+    public String toString()
+    {
+        return getAmount();
     }
 }
