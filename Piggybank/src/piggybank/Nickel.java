@@ -1,19 +1,36 @@
 package piggybank;
 
 
-public class Nickel extends CoinAbstract
+public class Nickel  extends CoinAbstract
 {
-    public Nickel(int amount)
+    public Nickel(int count)
     {
-        super(amount);
-        
-        setName("Nickel");
-        setValue(0.05);
+        super(count);
+        faceValue = 0.05;
     }
 
     public Nickel()
     {
-        setName("Nickel");
-        setValue(0.05);
+        faceValue = 0.05;
     }
+
+    @Override
+    public String strValue()
+    {
+        return count + " Nickel";
+    }
+
+    @Override
+    public String strValuePural()
+    {
+        if (this.count > 1)
+        {
+            return count + " Nickels";
+        }
+        else
+        {
+            return strValue();
+        }
+    }
+
 }

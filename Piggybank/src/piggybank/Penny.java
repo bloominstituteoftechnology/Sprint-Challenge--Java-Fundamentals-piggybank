@@ -3,17 +3,33 @@ package piggybank;
 
 public class Penny extends CoinAbstract
 {
-    public Penny(int amount)
+    public Penny(int count)
     {
-        super(amount);
-        
-        setName("Penny");
-        setValue(0.01);
+        super(count);
+        faceValue = 0.01;
     }
 
     public Penny()
     {
-        setName("Penny");
-        setValue(0.01);
+        faceValue = 0.01;
+    }
+
+    @Override
+    public String strValue()
+    {
+        return count + " Penny";
+    }
+
+    @Override
+    public String strValuePural()
+    {
+        if (this.count > 1)
+        {
+            return count + " Pennies";
+        }
+        else
+        {
+            return strValue();
+        }
     }
 }

@@ -2,18 +2,26 @@ package piggybank;
 
 public class Dollar extends CoinAbstract
 {
-    public Dollar(int amount)
+    public Dollar(int count)
     {
-        super(amount);
-
-        setName("Dollar");
-        setValue(1.00);
+        super(count);
+        faceValue = 1.0;
     }
-
 
     public Dollar()
     {
-        setName("Dollar");
-        setValue(1.00);
+        faceValue = 1.0;
+    }
+
+    @Override
+    public String strValue()
+    {
+        return "$" + count;
+    }
+
+    @Override
+    public String strValuePural()
+    {
+        return strValue();
     }
 }

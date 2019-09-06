@@ -1,69 +1,43 @@
 package piggybank;
 
+import java.math.BigDecimal;
+
 public abstract class CoinAbstract
 {
-    private String name;
-    private double value;
-    private int amount;
+    protected int count = 1;
+    protected double faceValue;
+
+    public CoinAbstract(int count)
+    {
+        this.count = count;
+    }
 
     public CoinAbstract()
     {
-        this.amount = 1;
+
     }
 
-    public CoinAbstract(int amount)
+    public double getValue()
     {
-        this.amount = amount;
+        return faceValue * count;
     }
 
-    public double getTotal() {
-        return this.value * this.amount;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getValue() {
-        return this.value;
-    }
-
-    public void setValue(double value) {
-        this.value = value;
-    }
-
-    public String getAmount() {
-        if (this.name == "Dollar") {
-            return "$" + this.amount;
-        }
-        else if (this.amount > 1 )
-        {
-            if (this.name == "Penny")
-            {
-                return this.amount + " Pennies";
-            }
-            else
-            {
-                return this.amount + " " + this.name + "s";
-            }
-        }
-        else
-        {
-            return this.amount + " " + this.name;
-        }
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
-    @Override
-    public String toString()
+    public double getFaceValue()
     {
-        return getAmount();
+        return faceValue;
     }
+
+    public int getCount()
+    {
+        return count;
+    }
+
+    public void setCount(int count)
+    {
+        this.count = count;
+    }
+
+    public abstract String strValue();
+
+    public abstract String strValuePural();
 }

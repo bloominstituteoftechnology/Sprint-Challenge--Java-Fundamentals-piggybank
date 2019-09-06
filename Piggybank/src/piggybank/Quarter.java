@@ -2,17 +2,33 @@ package piggybank;
 
 public class Quarter extends CoinAbstract
 {
-    public Quarter(int amount)
+    public Quarter(int count)
     {
-        super(amount);
-
-        setName("Quarter");
-        setValue(0.25);
+        super(count);
+        faceValue = 0.25;
     }
 
     public Quarter()
     {
-        setName("Quarter");
-        setValue(0.25);
+        faceValue = 0.25;
+    }
+
+    @Override
+    public String strValue()
+    {
+        return count + " Quarter";
+    }
+
+    @Override
+    public String strValuePural()
+    {
+        if (this.count > 1)
+        {
+            return count + " Quarters";
+        }
+        else
+        {
+            return strValue();
+        }
     }
 }
