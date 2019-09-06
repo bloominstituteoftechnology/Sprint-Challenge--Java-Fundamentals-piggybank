@@ -5,14 +5,11 @@ import java.util.*;
 public class Dime extends Coin 
 {
 	//constructor 
-	public Dime(double coinValue, int amountAdded){
-		super(coinValue, amountAdded);
+	public Dime(int amountAdded){
+		super(0.10, amountAdded);
+
 	}
 
+
 }
 
-//methods
-public void totalValue()
-{
-	
-}

@@ -5,14 +5,9 @@ import java.util.*;
 public class Quarter extends Coin 
 {
 	//constructor 
-	public Quarter(double coinValue, int amountAdded){
-		super(coinValue, amountAdded);
+	public Quarter(int amountAdded){
+		super(0.25, amountAdded);
 	}
-
-}
-
-//methods
-public void totalValue()
-{
 	
 }
+

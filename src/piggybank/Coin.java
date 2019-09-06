@@ -9,7 +9,8 @@ public abstract class Coin
 
 	private double coinValue; 
 	private int amountAdded;
-	// private double totalValue; 
+
+	
 
 	//constructor 
 	public Coin(double coinValue, int amountAdded /*double totalValue*/)
@@ -18,20 +19,26 @@ public abstract class Coin
 		this.amountAdded = amountAdded;
 		// this.totalValue = totalValue 
 	}
-	
+
 
 	//methods
 
-	public void totalValue(double coinValue, int amountAdded)
+	// public void totalValue() /*(double coinValue, int amountAdded)*/
+	// {
+	// 	// int a = amountAdded;
+
+	// 	// totalValue = Double(a) * coinValue;
+
+
+
+	// 	System.out.println("Within Coin.java!");
+	// 	System.out.println(totalValue);
+	// }
+
+	public double totalValue()
 	{
-		int amountAdded = amountAdded;
-
-		totalValue = Double(amountAdded) * coinValue;
-	
-		
-
-		System.out.println("Within Coin.java!")
-		System.out.println(totalValue)
+		double totalValue = amountAdded * coinValue;
+		return totalValue;
 	}
 
 }

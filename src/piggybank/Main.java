@@ -16,6 +16,13 @@ public class Main
 
 		//array list
 		System.out.println("***Array List***");
-		ArrayList<String> coin = new ArrayList<String>();
+		ArrayList<Coin> coin = new ArrayList<Coin>();
+
+		coin.add(new Dime(20));
+		coin.add(new Penny(3));
+
+		coin.forEach(i -> System.out.println(i.totalValue()));
+		System.out.println("In Main.java");
+
 	}
 }

@@ -5,14 +5,18 @@ import java.util.*;
 public class Nickel extends Coin 
 {
 	//constructor 
-	public Nickel(double coinValue, int amountAdded){
-		super(coinValue, amountAdded);
+	public Nickel(int amountAdded){
+		super(0.05, amountAdded);
 	}
 
+	// public double totalValue()
+	// {
+	// return coinValue;
+	// }
 }
 
 //methods
-public void totalValue()
-{
-	
-}
+// public double void totalValue()
+// {
+// 	return coinValue;
+// }

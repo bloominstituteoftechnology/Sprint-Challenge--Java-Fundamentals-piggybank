@@ -5,14 +5,9 @@ import java.util.*;
 public class Dollar extends Coin 
 {
 	//constructor 
-	public Dollar(double coinValue, int amountAdded){
-		super(coinValue, amountAdded);
+	public Dollar(int amountAdded){
+		super(1.00, amountAdded);
 	}
 
 }
 
-//methods
-public void totalValue()
-{
-	
-}
