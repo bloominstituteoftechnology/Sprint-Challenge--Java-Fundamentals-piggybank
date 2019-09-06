@@ -103,10 +103,12 @@ public class Main
             myValue = myValue + m.getValue();
         }
 
+
+
         System.out.println("The piggy bank holds " + fp.format(myValue));
 
         System.out.println();
-        System.out.println("Stretch Goals\n");
+        System.out.println("This is The Stretch\n");
 
         double amtToSpend = 1.50;
         if (checkSpend(amtToSpend))
@@ -126,7 +128,7 @@ public class Main
             System.out.println("The piggy bank holds " + fp.format(myValue));
         } else
         {
-            System.out.println("No enough funds :-(");
+            System.out.println("Insufficient Funds Your Broke :-(");
         }
     }
 }
