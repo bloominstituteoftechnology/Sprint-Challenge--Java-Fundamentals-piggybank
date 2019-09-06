@@ -3,7 +3,7 @@ package piggybank;
 import java.util.*;
 
 
-public class Coin
+public abstract class Coin
 {
 	//attributes
 
@@ -12,16 +12,15 @@ public class Coin
 	// private double totalValue; 
 
 	//constructor 
-	public Coin(double coinValue, int amountAdded, /*double totalValue*/)
+	public Coin(double coinValue, int amountAdded /*double totalValue*/)
 	{
 		this.coinValue = coinValue;
 		this.amountAdded = amountAdded;
 		// this.totalValue = totalValue 
 	}
+	
 
 	//methods
-
-
 
 	public void totalValue(double coinValue, int amountAdded)
 	{
