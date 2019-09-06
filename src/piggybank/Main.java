@@ -1,6 +1,7 @@
 package piggybank;
 
 import java.util.*;
+import java.util.ArrayList;
 import java.text.DecimalFormat;
 
 public class Main
@@ -10,7 +11,11 @@ public class Main
 		DecimalFormat fp = new DecimalFormat("$###,###.00");
 
 		//HashMap 
-		HashMap<Money, Amount> Bank = new HashMap <>();
+		// System.out.println("***HashMap***");
+		// HashMap<String, Amount> Bank = new HashMap <>();
 
+		//array list
+		System.out.println("***Array List***");
+		ArrayList<String> coin = new ArrayList<String>();
 	}
 }
