@@ -1,6 +1,6 @@
 package piggyBank;
 
-public class Nickel
+public class Nickel extends Money
 {
     private String name;
     private double nickel;

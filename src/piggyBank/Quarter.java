@@ -1,9 +1,21 @@
 package piggyBank;
 
-public class Quarter
+public class Quarter extends Money
 {
-    private String name;
-    private double quarter;
+    public Quarter(int count)
+    {
+        super(count);
+        value = 0.25;
+    }
 
-    public Quarter(double money)
+    public Quarter()
+    {
+        value = 0.25;
+    }
+
+    @Override
+    public String toString()
+    {
+        return count + " quarter.";
+    }
 }
