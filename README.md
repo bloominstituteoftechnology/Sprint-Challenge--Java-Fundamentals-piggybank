@@ -20,6 +20,8 @@ This sprint challenge combines the knowledge from this week's Java Fundamentals 
 
 We have a magical "piggy bank" (a piggy bank is the traditional name of a place to store coins, bills, money). The piggy bank is magical because it can hold unlimited amounts of money. However, you can not get the money out of it.
 
+The use of IntelliJ is optional. However, I think using a text editor with the JDK as we did the first three modules would be more straightfoward for this challenge.
+
 * [ ] Create a collection (Array, ArrayList, or HashMap) to represent the piggy bank. The elements in the collection are pockets of money.
   * Each element in the collection contains
     * The number of coins in this group
@@ -78,3 +80,8 @@ Pseudocode for this should look like
     `7 Dimes`  
     `$1`  
     `10 Pennies`  
+
+- [ ] Print the value of the Piggy Bank
+  - on the console should appear  
+
+    `The piggy bank holds $4.30`
