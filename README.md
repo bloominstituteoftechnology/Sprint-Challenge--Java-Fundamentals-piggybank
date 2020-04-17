@@ -1,4 +1,4 @@
-# Magical Piggy Bank
+# Sprint Challenge for WEB Java Fundamentals: Magical Piggy Bank
 
 A student that completes this project shows that they can:
 
