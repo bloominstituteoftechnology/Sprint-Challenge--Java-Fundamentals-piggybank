@@ -24,10 +24,10 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. Describe why Java is called an object oriented, strongly typed language.
-2. Give examples of Java Collections explaining the use and differences between them.
-3. What is recursion and how does it differ from regular looping?
-4. Explain the differences between Abstract Classes and Interfaces including scenarios of when to use them.
+1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+2. Explain the three steps needed to run a Java application including what each step does and how those step correlate to running a JavaScript application.
+3. Explain how Java being a strongly typed language affected you solution.
+4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
 
 ## Instructions
 
