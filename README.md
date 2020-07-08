@@ -2,7 +2,7 @@
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
-This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored **Java Fundamentals**. During this sprint, you studied **Java Fundamentals using the JDK**. In your challenge this week, you will demonstrate your mastery of these skills by creating **a Java Console Application using Object Oriented Programming**.
+This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored **Java Fundamentals**. During this sprint, you studied **Java Fundamentals*. In your challenge this week, you will demonstrate your mastery of these skills by creating **a Java Spring Database Application using Object Oriented Programming**.
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
@@ -12,9 +12,7 @@ _You have **three hours** to complete this challenge. Plan your time accordingly
 
 ## Introduction
 
-This sprint challenge combines the knowledge from this week's Java Fundamentals lessons to create a Magical Piggy Bank using Java and the JDK. We have a magical "piggy bank" (a piggy bank is the traditional name of a place to store coins, bills, money). The piggy bank is magical because it can hold unlimited amounts of money. However, you can not get the money out of it.
-
-The use of IntelliJ is optional. However, I think using a text editor with the JDK as we did the first three modules would be more straightforward for this challenge.
+This sprint challenge combines the knowledge from this week's Java Fundamentals lessons to create a Magical Piggy Bank using Java and the Spring Frame. We have a magical "piggy bank" (a piggy bank is the traditional name of a place to store coins, bills, money). The piggy bank is magical because it can hold unlimited amounts of money. However, you can not get the money out of it.
 
 ### Commits
 
@@ -25,7 +23,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
-2. Explain the three steps needed to run a Java application including what each step does and how those step correlate to running a JavaScript application.
+2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
 3. Explain how Java being a strongly typed language affected you solution.
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
 
@@ -44,41 +42,108 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 ### Task 2: Project Requirements
 
-- [ ] Create a collection (Array, ArrayList, or HashMap) to represent the piggy bank. The elements in the collection are pockets of money.
-  - Each element in the collection contains
+- [ ] Using the wizard in IntelliJ, create a Java Spring Application
+  - [ ] Name the application piggybank
+  - [ ] Steps to remember in generating the initial application
+    - [ ] Set the Group and Artifact Name
+    - [ ] Set that this is a Maven Project
+    - [ ] Select the proper Java Version
+    - [ ] Select Spring Boot Version 2.2.X
+    - [ ] Add the 4 Dependencies we need for a Java Spring Database Application
+    - [ ] You do not need to use services or configuration packages
+    - [ ] You do need to
+      - [ ] update your POM.XML so H2 will work
+      - [ ] update the applications.properties configuration file
+      - [ ] add the data.sql file
+      - [ ] create the necessary packages (at least 3 are needed) and classes
+- [ ] Create a table to represent the piggy bank
+  - Each row in the table contains: (use the provided data.sql as a guide)
     - The number of coins in this group
     - The face value of the coins in the group
-    - How to print the total value of this group which is face value * number of coins in the group
-  - The elements in the collection should be an abstract class of money. The abstract class of money should have child classes for each of the following types of money
-    - A Dollar worth $1.00
-    - A Quarter worth $0.25
-    - A Dime worth $0.10
-    - A Nickel worth $0.05
-    - A Penny worth $0.01
-  - When creating a money object, you can optionally give the number of coins being added. If no number is given, the default is 1 coin being added to the piggy bank.  
+    - The name of a single coin
+    - The name of more than one coin
+- [ ] Create an endpoint http://localhost:2019/piggybank that returns a list of JSON objects of all the coins with all of their information from the piggy bank and an HTTP Status of OK
+  - Results so be something like
 
-The main program will look something like this pseudocode (remember pseudocode is not meant to be syntactically correct but explain the algorithm):
+```JSON
+[
+    {
+        "coinid": 1,
+        "name": "Quarter",
+        "namepural": "Quarters",
+        "value": 0.25,
+        "quantity": 1
+    },
+    {
+        "coinid": 2,
+        "name": "Dime",
+        "namepural": "Dimes",
+        "value": 0.1,
+        "quantity": 1
+    },
+    {
+        "coinid": 3,
+        "name": "Dollar",
+        "namepural": "Dollars",
+        "value": 1.0,
+        "quantity": 5
+    },
+    {
+        "coinid": 4,
+        "name": "Nickel",
+        "namepural": "Nickels",
+        "value": 0.05,
+        "quantity": 3
+    },
+    {
+        "coinid": 5,
+        "name": "Dime",
+        "namepural": "Dimes",
+        "value": 0.1,
+        "quantity": 7
+    },
+    {
+        "coinid": 6,
+        "name": "Dollar",
+        "namepural": "Dollars",
+        "value": 1.0,
+        "quantity": 1
+    },
+    {
+        "coinid": 7,
+        "name": "Penny",
+        "namepural": "Pennies",
+        "value": 0.01,
+        "quantity": 10
+    }
+]
+```
 
-- [ ] Create collection
-- [ ] piggyBank.add(new Quarter())
-- [ ] piggyBank.add(new Dime())
-- [ ] piggyBank.add(new Dollar(5))
-- [ ] piggyBank.add(new Nickel(3))
-- [ ] piggyBank.add(new Dime(7))
-- [ ] piggyBank.add(new Dollar())
-- [ ] piggyBank.add(new Penny(10))
-- [ ] Print the contents of the Piggy Bank
-  - on the console should appear  
-    `1 Quarter`  
-    `1 Dime`  
-    `$5`  
-    `3 Nickels`  
-    `7 Dimes`  
-    `$1`  
-    `10 Pennies`  
-- [ ] Print the value of the Piggy Bank
-  - on the console should appear  
-    `The piggy bank holds $7.30`  
+- [ ] Create an endpoint http://localhost:2019/total that prints to console the contents of the Piggy Bank as follows and returns an HTTP Status of OK:
+
+```TEXT
+    1 Quarter
+    1 Dime
+    5 Dollars
+    3 Nickels
+    7 Dimes
+    1 Dollar
+    10 Pennies
+    The piggy bank holds 7.3
+```
+
+Note that:
+
+```TEXT
+7.30 =
+  ( 1 * 0.25) +
+  ( 1 * 0.10) +
+  ( 5 * 1.00) +
+  ( 3 * 0.05) +
+  ( 7 * 0.10) +
+  ( 1 * 1.00) +
+  (10 * 0.10)
+```
 
 Note: that when you have more than 1 coin, the plural of the coin's name is printed.
 
@@ -104,20 +169,21 @@ After finishing your required elements, you can push your work further. These go
   - Prevent taking more coins than present in the piggy bank
   - Coins do not have to be removed in the same quantity that were added. For example based on the main program above, removing 3 dimes would be allowed. The Piggy Bank should adjust appropriately.
   - Just the amount to be removed should be given. The program will figure out which coins to remove.
+  - You are to create an endpoint http://localhost:2019/money/{amount} that prints to the console the following (using 1.5 as the amount to remove) and returns an HTTP Status of OK
 
-Pseudocode for this should look like
+```TEXT
+    $4
+    7 Dimes
+    $1
+    10 Pennies
+    The piggy bank holds $5.8
+```
 
-- [ ] subtract(1.50)
-- [ ] print contents of the Piggy Bank
-  - on the console on possible out come is  
-    `$4`  
-    `7 Dimes`  
-    `$1`  
-    `10 Pennies`  
-- [ ] Print the value of the Piggy Bank
-  - on the console should appear  
+  - If the money cannot be removed, the following should be printed to the console and return an HTTP Status of OK
 
-    `The piggy bank holds $4.30`
+```TEXT
+    Money not available
+```
 
 ## Submission format
 
