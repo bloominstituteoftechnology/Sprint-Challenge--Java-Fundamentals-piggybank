@@ -42,6 +42,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 ### Task 2: Project Requirements
 
+- [ ] You are creating a project from scratch! There is no initial project from where to start.
 - [ ] Using the wizard in IntelliJ, create a Java Spring Application
   - [ ] Name the application piggybank
   - [ ] Steps to remember in generating the initial application
@@ -56,70 +57,15 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
       - [ ] update the applications.properties configuration file
       - [ ] add the data.sql file
       - [ ] create the necessary packages (at least 3 are needed) and classes
-- [ ] Create a table to represent the piggy bank
+- [ ] Create a model Coin to represent the table for the piggy bank
   - Each row in the table contains: (use the provided data.sql as a guide)
     - The number of coins in this group
     - The face value of the coins in the group
     - The name of a single coin
     - The name of more than one coin
-- [ ] Create an endpoint http://localhost:2019/piggybank that returns a list of JSON objects of all the coins with all of their information from the piggy bank and an HTTP Status of OK
-  - Results so be something like
-
-```JSON
-[
-    {
-        "coinid": 1,
-        "name": "Quarter",
-        "namepural": "Quarters",
-        "value": 0.25,
-        "quantity": 1
-    },
-    {
-        "coinid": 2,
-        "name": "Dime",
-        "namepural": "Dimes",
-        "value": 0.1,
-        "quantity": 1
-    },
-    {
-        "coinid": 3,
-        "name": "Dollar",
-        "namepural": "Dollars",
-        "value": 1.0,
-        "quantity": 5
-    },
-    {
-        "coinid": 4,
-        "name": "Nickel",
-        "namepural": "Nickels",
-        "value": 0.05,
-        "quantity": 3
-    },
-    {
-        "coinid": 5,
-        "name": "Dime",
-        "namepural": "Dimes",
-        "value": 0.1,
-        "quantity": 7
-    },
-    {
-        "coinid": 6,
-        "name": "Dollar",
-        "namepural": "Dollars",
-        "value": 1.0,
-        "quantity": 1
-    },
-    {
-        "coinid": 7,
-        "name": "Penny",
-        "namepural": "Pennies",
-        "value": 0.01,
-        "quantity": 10
-    }
-]
-```
-
 - [ ] Create an endpoint http://localhost:2019/total that prints to console the contents of the Piggy Bank as follows and returns an HTTP Status of OK:
+
+In your console in IntelliJ you should see:
 
 ```TEXT
     1 Quarter
@@ -132,18 +78,11 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
     The piggy bank holds 7.3
 ```
 
-Note that:
+In Postman you should see
 
-```TEXT
-7.30 =
-  ( 1 * 0.25) +
-  ( 1 * 0.10) +
-  ( 5 * 1.00) +
-  ( 3 * 0.05) +
-  ( 7 * 0.10) +
-  ( 1 * 1.00) +
-  (10 * 0.10)
-```
+![Postman Image](postman.png)
+
+Note: 7.30 = ( 1 * 0.25) + ( 1 * 0.10) + ( 5 * 1.00) + ( 3 * 0.05) + ( 7 * 0.10) + ( 1 * 1.00) + (10 * 0.10)
 
 Note: that when you have more than 1 coin, the plural of the coin's name is printed.
 
