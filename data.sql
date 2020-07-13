@@ -1,7 +1,7 @@
 DELETE
 FROM coins;
 
-INSERT INTO coins (coinid, name, namepural, value, quantity)
+INSERT INTO coins (coinid, name, nameplural, value, quantity)
            VALUES (1, 'Quarter', 'Quarters', 0.25, 1),
                   (2, 'Dime', 'Dimes', 0.10, 1),
                   (3, 'Dollar', 'Dollars', 1.00, 5),
