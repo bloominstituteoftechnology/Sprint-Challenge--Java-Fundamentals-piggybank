@@ -15,10 +15,33 @@ import java.util.List;
 public class CoinsController {
     @Autowired
     CoinsRepository coinrepo;
+
+    private List<Coins> findTotalPrint(List<Coins>myList, CheckCoins tester){
+        List<Coins> temptList = new ArrayList<>();
+
+        for(Coins e: myList){
+            if(tester.test(e));{
+                temptList.add(e);
+            }
+        }
+
+        return temptList;
+    }
+
     @GetMapping(value = "/total", produces = {"application/json"})
     public ResponseEntity<?> listAllCoins(){
         List<Coins> myList = new ArrayList<>();
         coinrepo.findAll().iterator().forEachRemaining(myList::add);
+        myList.forEach(a -> System.out.println(a.getQuantity() + " " + a.getName()));
+        double totalPiggyBank=0;
+        String name;
+        double quantity;
+        for(Coins e: myList){
+            totalPiggyBank=  totalPiggyBank + (e.getQuantity())*(e.getValue());
+            name= e.getName();
+            quantity= e.getQuantity();
+        }
+        System.out.println( "The piggy bank total is: " + " " + totalPiggyBank);
         return new ResponseEntity<>(myList, HttpStatus.OK);
     }
 }
