@@ -10,11 +10,4 @@ VALUES (1, 'Quarter', 'Quarters', 0.25, 1),
        (6, 'Dollar', 'Dollars', 1.00, 1),
        (7, 'Penny', 'Pennies', 0.01, 10);
 
-/*
-We must tell hibernate the ids that have already been used.
-The number must be larger than the last used id.
-15 > 7 so we are good!
- */
-
-alter
-sequence hibernate_sequence restart with 15;
+alter sequence hibernate_sequence restart with 15;
