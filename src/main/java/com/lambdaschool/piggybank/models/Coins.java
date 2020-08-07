@@ -12,9 +12,9 @@ public class Coins {
     private String name;
     private String nameplural;
     private double value;
-    private double quantity;
+    private int quantity;
 
-    public Coins(String name, String nameplural, double value, double quantity) {
+    public Coins(String name, String nameplural, double value, int quantity) {
         this.name = name;
         this.nameplural = nameplural;
         this.value = value;
@@ -52,11 +52,11 @@ public class Coins {
         this.value = value;
     }
 
-    public double getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(double quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 

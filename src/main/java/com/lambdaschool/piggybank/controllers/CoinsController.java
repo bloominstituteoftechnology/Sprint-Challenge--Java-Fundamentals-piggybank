@@ -32,16 +32,20 @@ public class CoinsController {
     public ResponseEntity<?> listAllCoins(){
         List<Coins> myList = new ArrayList<>();
         coinrepo.findAll().iterator().forEachRemaining(myList::add);
-        myList.forEach(a -> System.out.println(a.getQuantity() + " " + a.getName()));
+        myList.forEach(a ->{
+            if(a.getQuantity()> 1){
+                System.out.println(a.getQuantity() + " " + a.getNameplural());
+            }else{
+                System.out.println(a.getQuantity()+ " " + a.getName());
+            }
+        } );
         double totalPiggyBank=0;
-        String name;
-        double quantity;
+
         for(Coins e: myList){
             totalPiggyBank=  totalPiggyBank + (e.getQuantity())*(e.getValue());
-            name= e.getName();
-            quantity= e.getQuantity();
+
         }
-        System.out.println( "The piggy bank total is: " + " " + totalPiggyBank);
-        return new ResponseEntity<>(myList, HttpStatus.OK);
+        System.out.println( "The pippy bank holds" + " " + totalPiggyBank);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
