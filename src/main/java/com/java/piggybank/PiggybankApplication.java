@@ -49,3 +49,4 @@ public class PiggybankApplication {
 //        (5, 'Dime', 'Dimes', 0.10, 7),
 //        (6, 'Dollar', 'Dollars', 1.00, 1),
 //        (7, 'Penny', 'Pennies', 0.01, 10);
+// had to change the amounts to make the endpoints retrun properly
