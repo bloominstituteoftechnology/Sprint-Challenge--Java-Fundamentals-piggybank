@@ -1,6 +1,7 @@
 package com.java.piggybank.controllers;
 
-import com.java.piggybank.models.coins;
+//import com.java.piggybank.models.CoinDoc;
+import com.java.piggybank.models.Coin;
 import com.java.piggybank.repositories.PiggyBankRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,7 +20,7 @@ public class PiggyBankController {
   // http://localhost:2019/total
     @GetMapping(value = "/total", produces = {"application/json"})
     public ResponseEntity<?> listAllPiggyBankTotal() {
-        List<coins> myList = new ArrayList<>();
+        List<Coin> myList = new ArrayList<>();
         coinrepos.findAll().iterator().forEachRemaining(myList::add);
         return new ResponseEntity<>(myList, HttpStatus.OK);
     }
