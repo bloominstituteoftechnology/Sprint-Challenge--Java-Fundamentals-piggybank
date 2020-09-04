@@ -21,12 +21,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
-
+    
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+    I used the Spring Initializr to be able to set up a framework to work with web. I used for developer tools
+    which are: Spring Web, H2 Database, Spring Data Jpa, and Spring boot devTools. I had to have 3 packages folder: controllers,
+    models,repositories where it helped me set up. On the resource folder, i imported a data.sql file and in the application.properties
+    I set up the port.
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
+    so once i cloned the repo, i go on my git bash, cd into the folder, mkdir (You give it the name), then you add another folder called src,
+    then the package name. go to sublime, save and name file Main.java. After you have code built, you need to put the package in a jar file.
+    javac (package name)/*.java --->jar cvfe (package name).jar (package name).Main (package name)/.class --> java -jar (package name).jar
 3. Explain how Java being a strongly typed language affected you solution.
+    It's a lot more complex and more ojecte oriented but I'm starting to love java.
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
-
+    Yes :) Abstract classes cam have empty methods or some data whereas interface, is all about empty methods.
 ## Instructions
 
 ### Task 1: Project Set Up
