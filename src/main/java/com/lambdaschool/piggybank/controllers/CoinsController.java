@@ -48,4 +48,9 @@ public class CoinsController {
         System.out.println( "The pippy bank holds" + " " + totalPiggyBank);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    @GetMapping(value = "/amount", produces = {"application/json"})
+    public ResponseEntity<?> removeAmount(){
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 }
