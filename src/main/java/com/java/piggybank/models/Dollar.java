@@ -8,7 +8,7 @@ public class Dollar extends Money {
     @Override
     public double getValue() {
         return amount * 1.00;
-    }
+    } //how much our dollar is worth
 
     @Override
     public String getName() {

@@ -8,7 +8,7 @@ public class Penny extends Money {
     @Override
     public double getValue() {
         return amount * .01;
-    }
+    } //how much our coin is worth
 
     @Override
     public String getName() {

@@ -8,7 +8,7 @@ public class Dime extends Money{
     @Override
     public double getValue() {
         return amount * .10;
-    }
+    } //how much our coin is worth
 
     @Override
     public String getName() {

@@ -6,4 +6,4 @@ import org.springframework.data.repository.CrudRepository;
 public interface PiggyBankRepository extends CrudRepository<Coin, Long> {
 
 }
-// this repository goes with coin
+// this repository goes with coin this is our interface.

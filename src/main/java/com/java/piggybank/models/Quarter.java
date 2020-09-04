@@ -9,7 +9,7 @@ public class Quarter extends Money {
     @Override
     public double getValue() {
         return amount * .25;
-    }
+    } //how much our coin is worth
 
     @Override
     public String getName() {

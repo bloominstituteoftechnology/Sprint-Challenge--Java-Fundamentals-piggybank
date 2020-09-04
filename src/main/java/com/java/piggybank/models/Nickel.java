@@ -6,7 +6,7 @@ public class Nickel extends Money{
     }
 
     @Override
-    public double getValue() {
+    public double getValue() { //how much our coin is worth
         return amount * .05;
     }
 

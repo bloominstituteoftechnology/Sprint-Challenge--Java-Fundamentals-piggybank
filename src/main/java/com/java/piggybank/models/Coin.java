@@ -7,12 +7,12 @@ import javax.persistence.Entity;
         import javax.persistence.Table;
 
 @Entity
-@Table(name = "coins")
+@Table(name = "coins") //add our coin table
 // THIS IS FOR THE CONTROLLER
 
 public class Coin {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO) //generate an id automatically
     private long coinid;
     private String name;
     private String nameplural;

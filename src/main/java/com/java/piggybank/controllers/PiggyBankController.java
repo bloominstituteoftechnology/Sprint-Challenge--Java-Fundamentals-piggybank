@@ -18,7 +18,7 @@ public class PiggyBankController {
     PiggyBankRepository coinrepos;
 
   // http://localhost:2019/total
-    @GetMapping(value = "/total", produces = {"application/json"})
+    @GetMapping(value = "/total", produces = {"application/json"}) //create our endpoint here and map over it to return each item in the array
     public ResponseEntity<?> listAllPiggyBankTotal() {
         List<Coin> myList = new ArrayList<>();
         coinrepos.findAll().iterator().forEachRemaining(myList::add);

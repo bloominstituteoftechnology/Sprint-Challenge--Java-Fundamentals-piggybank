@@ -7,7 +7,9 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.9.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+    </parent> <!-- our project is a child of the parent project seen here. This Spring Boot starter
+     parent holds all of the default Maven configurations -->
+
     <groupId>com.java</groupId>
     <artifactId>piggybank</artifactId>
     <version>0.0.1-SNAPSHOT</version>
