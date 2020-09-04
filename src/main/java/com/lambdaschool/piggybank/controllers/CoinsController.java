@@ -1,6 +1,7 @@
 package com.lambdaschool.piggybank.controllers;
 
 import com.lambdaschool.piggybank.models.Coins;
+import com.lambdaschool.piggybank.models.RemoveCoin;
 import com.lambdaschool.piggybank.repositories.CoinsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,6 +16,8 @@ import java.util.List;
 public class CoinsController {
     @Autowired
     CoinsRepository coinrepo;
+    @Autowired
+    RemoveCoin removeCoin;
 
     private List<Coins> findTotalPrint(List<Coins>myList, CheckCoins tester){
         List<Coins> temptList = new ArrayList<>();
