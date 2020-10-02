@@ -2,7 +2,7 @@
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
-This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored **Java Fundamentals**. During this sprint, you studied **Java Fundamentals*. In your challenge this week, you will demonstrate your mastery of these skills by creating **a Java Spring Database Application using Object Oriented Programming**.
+This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored **Java Fundamentals**. During this sprint, you studied **Java Fundamentals\*. In your challenge this week, you will demonstrate your mastery of these skills by creating **a Java Spring Database Application using Object Oriented Programming\*\*.
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
@@ -82,7 +82,7 @@ In Postman you should see
 
 ![Postman Image](postman.png)
 
-Note: 7.30 = ( 1 * 0.25) + ( 1 * 0.10) + ( 5 * 1.00) + ( 3 * 0.05) + ( 7 * 0.10) + ( 1 * 1.00) + (10 * 0.10)
+Note: 7.30 = ( 1 _ 0.25) + ( 1 _ 0.10) + ( 5 _ 1.00) + ( 3 _ 0.05) + ( 7 _ 0.10) + ( 1 _ 1.00) + (10 \* 0.10)
 
 Note: that when you have more than 1 coin, the plural of the coin's name is printed.
 
@@ -118,7 +118,7 @@ After finishing your required elements, you can push your work further. These go
     The piggy bank holds $5.8
 ```
 
-  - If the money cannot be removed, the following should be printed to the console and return an HTTP Status of OK
+- If the money cannot be removed, the following should be printed to the console and return an HTTP Status of OK
 
 ```TEXT
     Money not available
@@ -128,6 +128,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
