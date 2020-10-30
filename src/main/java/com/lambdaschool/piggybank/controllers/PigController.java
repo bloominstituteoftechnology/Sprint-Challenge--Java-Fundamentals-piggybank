@@ -19,29 +19,34 @@ public class PigController
 
     @GetMapping(value = "/total",
         produces = {"application/json"})
+
     public ResponseEntity<?> getAllCoins()
     {
         List<Pig> myList = new ArrayList<>();
         pigrepos.findAll()
             .iterator()
             .forEachRemaining(myList::add);
-        ///return names and ids, need to make conditional statement for name plurals
-        List<Pig> rtnList = AssistingFunctions.findCoins(myList, c -> c.getCoinid());
-//appears to be a data compatibility issue with getCoinid above ^
-        rtnList.sort((c1, c2) -> c1.getName()
-            .compareToIgnoreCase(c2.getName()));
 
-        return new ResponseEntity<>(rtnList,
-            HttpStatus.OK);
-////return the total:
+        ////return the total:for loop to select name per total
         long total = 0;
-
         for (Pig c : myList)
         {
-            total = total + SUM(c.getQuantity()*c.getValue());
-            ///maybe SUM needs an import here?^
+            total = total + c.getQuantity() * c.getValue();
+        }
+        if(total == 1)
+        {
+            rtnList.sort((c1, c2) -> c1.getName()
+                .compareToIgnoreCase(c2.getName()));
+        }else
+        {
+            rtnList.sort((c1, c2) -> c1.getNameplural()
+                .compareToIgnoreCase(c2.getNameplural()));
         }
 
         System.out.println("The Piggy Bank holds" + total);
+
+        return new ResponseEntity<>(rtnList,
+            HttpStatus.OK);
+    }
     }
 }
