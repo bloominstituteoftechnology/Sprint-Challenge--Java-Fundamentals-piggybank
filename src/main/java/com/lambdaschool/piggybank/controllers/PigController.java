@@ -25,9 +25,9 @@ public class PigController
         pigrepos.findAll()
             .iterator()
             .forEachRemaining(myList::add);
-        ///return names and ids
+        ///return names and ids, need to make conditional statement for name plurals
         List<Pig> rtnList = AssistingFunctions.findCoins(myList, c -> c.getCoinid());
-
+//appears to be a data compatibility issue with getCoinid above ^
         rtnList.sort((c1, c2) -> c1.getName()
             .compareToIgnoreCase(c2.getName()));
 
@@ -38,7 +38,8 @@ public class PigController
 
         for (Pig c : myList)
         {
-            total = total + c.getQuantity()*c.getValue();
+            total = total + SUM(c.getQuantity()*c.getValue());
+            ///maybe SUM needs an import here?^
         }
 
         System.out.println("The Piggy Bank holds" + total);
