@@ -7,7 +7,7 @@ import java.util.List;
 
 public class AssistingFunctions
 {
-    public static List<Pig> findCountries(List<Pig> fullList, CheckPig tester)
+    public static List<Pig> findCoins(List<Pig> fullList, CheckPig tester)
     {
         List<Pig> tempPig = new ArrayList<>();
 
