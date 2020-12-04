@@ -20,12 +20,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Interview Questions
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers beforehand.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+We used polymorphism for differentiation between types of objects, inheritance for extending classes, and abstraction to display only pertinent information to the user.
+
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
+We need to set up Environment Variables and compile the program files in order to run the application in JDK.
+
 3. Explain how Java being a strongly typed language affected you solution.
+This impacts the amount of files we needed to create and the length of each function, but also the specificity of each factor.
+
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
+An interface is a comma separated list of interfaces separated by class and keywords whereas an abstract class has the abstract keyword and one pure function.
 
 ## Instructions
 
