@@ -5,9 +5,9 @@ import com.lambdaschool.piggybank.models.Pig;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AssistingFunctions
+public class HelperFunctions
 {
-    public static List<Pig> findCoins(List<Pig> fullList, CheckPig tester)
+    public static List<Pig> findCoins(List<Pig> fullList, CheckPiggy tester)
     {
         List<Pig> tempPig = new ArrayList<>();
 

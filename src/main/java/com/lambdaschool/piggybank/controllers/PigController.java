@@ -28,7 +28,6 @@ public class PigController
             .iterator()
             .forEachRemaining(myList::add);
 
-        ////return the total:for loop to select name per total
         long total = 0;
         for (Pig c : myList)
         {
@@ -36,18 +35,18 @@ public class PigController
         }
         if (total == 1)
         {
-            rtnList.sort((c1, c2) -> c1.getName()
+            myList.sort((c1, c2) -> c1.getName()
                 .compareToIgnoreCase(c2.getName()));
         } else
         {
-            rtnList.sort((c1, c2) -> c1.getNameplural()
+            myList.sort((c1, c2) -> c1.getNameplural()
                 .compareToIgnoreCase(c2.getNameplural()));
         }
 
         System.out.println("The Piggy Bank holds" + total);
 
-        return new ResponseEntity<>(rtnList,
+        return new ResponseEntity<>(myList,
             HttpStatus.OK);
     }
 }
-}
+
