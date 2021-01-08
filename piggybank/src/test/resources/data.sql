@@ -1,4 +1,19 @@
-DELETE
+/*
+ The following are needed for the application to run prior to models being created
+ */
+CREATE TABLE IF NOT EXISTS coins(coinid INT,
+    name VARCHAR(255),
+    nameplural VARCHAR(255),
+    value DOUBLE,
+    quantity INT);
+
+CREATE SEQUENCE IF NOT EXISTS hibernate_sequence;
+
+/*
+ This is the actual seed data
+ */
+
+ DELETE
 FROM coins;
 
 INSERT INTO coins (coinid, name, nameplural, value, quantity)

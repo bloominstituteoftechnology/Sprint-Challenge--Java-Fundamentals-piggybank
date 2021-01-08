@@ -42,21 +42,13 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 ### Task 2: Project Requirements
 
-- [ ] You are creating a project from scratch! There is no initial project from where to start.
-- [ ] Using the wizard in IntelliJ, create a Java Spring Application
-  - [ ] Name the application piggybank
-  - [ ] Steps to remember in generating the initial application
-    - [ ] Set the Group and Artifact Name
-    - [ ] Set that this is a Maven Project
-    - [ ] Select the proper Java Version
-    - [ ] Select Spring Boot Version 2.2.X
-    - [ ] Add the 4 Dependencies we need for a Java Spring Database Application
-    - [ ] You do not need to use services or configuration packages
-    - [ ] You do need to
-      - [ ] update your POM.XML so H2 will work
-      - [ ] update the applications.properties configuration file
-      - [ ] add the data.sql file
-      - [ ] create the necessary packages (at least 3 are needed) and classes
+- [ ] You are to start with the provided initial application.
+- This application was created using the wizard in IntelliJ
+  - The application is named piggybank
+  - You do not need to use services or configuration packages
+  - You do need to
+    - update the applications.properties configuration file
+    - create the necessary packages (at least 3 are needed) and classes
 - [ ] Create a model Coin to represent the table for the piggy bank
   - Each row in the table contains: (use the provided data.sql as a guide)
     - The number of coins in this group
@@ -128,6 +120,4 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete after receiving your pull-request
+- [ ] Set up your fork on Github to submit via Codegrade, pushing commits to your <firstName-lastName> branch.
