@@ -12,8 +12,7 @@ CREATE SEQUENCE IF NOT EXISTS hibernate_sequence;
 /*
  This is the actual seed data
  */
-
- DELETE
+DELETE
 FROM coins;
 
 INSERT INTO coins (coinid, name, nameplural, value, quantity)
