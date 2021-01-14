@@ -37,7 +37,8 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 - [ ] Start with the provided piggybank application
 - [ ] Push commits: `git push -u origin <firstName-lastName>`
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+
+[![Video on how to set up your project](https://img.youtube.com/vi/VID/0.jpg)](https://youtu.be/VID)
 
 ### Task 2: Project Requirements
 
