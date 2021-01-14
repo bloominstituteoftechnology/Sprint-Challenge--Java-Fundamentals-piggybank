@@ -35,7 +35,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 - [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Start with the provided piggybank application
-- [ ] Push commits: `git push origin <firstName-lastName>`
+- [ ] Push commits: `git push -u origin <firstName-lastName>`
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
 - [ ] Push commits: git push origin `<firstName-lastName>`
 
