@@ -38,6 +38,8 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 - [ ] Push commits: `git push -u origin <firstName-lastName>`
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
 
+#### Vide on How to Set Up Your Project
+
 [![Video on how to set up your project](https://img.youtube.com/vi/Bw55xlQGQoQ/0.jpg)](https://youtu.be/Bw55xlQGQoQ)
 
 ### Task 2: Project Requirements
