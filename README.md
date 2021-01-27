@@ -16,16 +16,16 @@ This sprint challenge combines the knowledge from this week's Java Fundamentals 
 
 ### Commits
 
-Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your team lead as the evaluate your solution.
+Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your project reviewers as they evaluate your solution.
 
 ## Interview Questions
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. 
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
-2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
-3. Explain how Java being a strongly typed language affected you solution.
-4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
+2. Explain how you connected your solution to a database, including what code was necessary for this task.
+3. Explain the advantages of the project structure (packages) you used.
+4. Explain the differences between Abstract Classes and Interfaces, including how they are used in your application?
 
 ## Instructions
 
