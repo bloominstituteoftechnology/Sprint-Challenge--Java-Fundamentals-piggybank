@@ -48,7 +48,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 - This application was created using the wizard in IntelliJ
   - The application is named piggybank
   - You do not need to use services or configuration packages
-  - DO NOT CHANGE THE JAVA VERSION IN THE POM.XML FILE!!! Version 11 is needed for CodeGrade.
+  - Do NOT change or delete entries in the POM.XML - Dependencies, plugins, etc. may be added as needed
   - You do need to
     - update the applications.properties configuration file
     - create the necessary packages (at least 3 are needed) and classes
