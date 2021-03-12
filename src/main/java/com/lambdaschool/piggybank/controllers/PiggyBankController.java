@@ -23,37 +23,28 @@ class PiggyBankController
     {
         List<Coins> tempList = new ArrayList<>();
 
-        for (Coins c : myList)
+        for (Coins c : myList) { if (tester.test(c)) { tempList.add(c); } }
+
+        return tempList;
+    }
+
+
+    //http://localhost:2021/total
+    @GetMapping(value = "/total", produces = {"application/json"})
+    public ResponseEntity<?> listAllCoins()
+    {
+        List<Coins> myList = new ArrayList<>();
+        pigrepos.findAll()
+                .iterator()
+                .forEachRemaining(myList::add);
+        double total = 0;
+        for(Coins c : myList)
         {
-            if(tester.test(c))
-            {
-                tempList.add(e);
-            }
+            total = total + c.getQuantity();
         }
 
-        //http://localhost:2021/coins/all
-        @GetMapping(value = "/coins/all", produces = {"application/json"})
-        public ResponseEntity <?> listAllCoins()
-        {
-            List<Coins> myList
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        System.out.println("Total Amount" + total);
+        return new ResponseEntity<>(myList, HttpStatus.OK);
     }
 
 
@@ -61,15 +52,32 @@ class PiggyBankController
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
