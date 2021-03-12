@@ -37,16 +37,16 @@ public class Coins
         public long getCoinid(){return coinid;}
 
         public String getName(){return name;}
-        public void setName(){this.name=name;}
+        public void setName(){this.name = name;}
 
         public String getNameplural(){return nameplural;}
-        public void setNameplural(){this.nameplural=nameplural;}
+        public void setNameplural(){this.nameplural = nameplural;}
 
         public double getValue(){return value;}
-        public void setValue(){this.value=value;}
+        public void setValue(){this.value = value;}
 
-        public int getQuantity(){return quantity}
-        public void setQuantity(){this.quantity=quantity;}
+        public int getQuantity(){return quantity;}
+        public void setQuantity(){this.quantity = quantity;}
 
         @Override
         public String toString()
