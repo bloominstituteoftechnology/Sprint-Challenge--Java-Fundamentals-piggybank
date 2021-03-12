@@ -35,8 +35,9 @@ class PiggyBankController
         @GetMapping(value = "/coins/all", produces = {"application/json"})
         public ResponseEntity <?> listAllCoins()
         {
-
+            List<Coins> myList
         }
+
 
 
 
