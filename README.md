@@ -52,13 +52,13 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
   - You do need to
     - update the applications.properties configuration file
     - create the necessary packages (at least 3 are needed) and classes
-- [ ] Create a model Coin to represent the table for the piggy bank
+- [x] Create a model Coin to represent the table for the piggy bank
   - Each row in the table contains: (use the provided data.sql as a guide)
     - The number of coins in this group
     - The face value of the coins in the group
     - The name of a single coin
     - The name of more than one coin
-- [ ] Create an endpoint http://localhost:2019/total that prints to console the contents of the Piggy Bank as follows and returns an HTTP Status of OK:
+- [x] Create an endpoint http://localhost:2019/total that prints to console the contents of the Piggy Bank as follows and returns an HTTP Status of OK:
 
 In your console in IntelliJ you should see:
 
