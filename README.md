@@ -20,12 +20,12 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Interview Questions
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. 
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics.
 
-1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.  I made different types of objects and classes in order to properly form the app
 2. Explain how you connected your solution to a database, including what code was necessary for this task.
 3. Explain the advantages of the project structure (packages) you used.
-4. Explain the differences between Abstract Classes and Interfaces, including how they are used in your application?
+4. Explain the differences between Abstract Classes and Interfaces, including how they are used in your application?  Abstract classes are used to kind of set defaults and Interfaces are like abstract classes if your fields don't need values.
 
 ## Instructions
 
