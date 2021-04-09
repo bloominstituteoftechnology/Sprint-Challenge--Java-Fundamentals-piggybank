@@ -6,6 +6,7 @@ import javax.persistence.*;
 @Table(name = "coins")
 public class Coin
 {
+    //how the Table looks in SQL
 //    coins (coinid, name, nameplural, value, quantity)
 //    VALUES (1, 'Quarter', 'Quarters', 0.25, 1),
 //                  (2, 'Dime', 'Dimes', 0.10, 1),
@@ -16,7 +17,7 @@ public class Coin
 //                      (7, 'Penny', 'Pennies', 0.01, 10);
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long counid;
+    private long coinid;
     private String name;
     private String nameplural;
     private double value;
@@ -38,14 +39,14 @@ public class Coin
         this.quantity = quantity;
     }
 
-    public long getCounid()
+    public long getCoinid()
     {
-        return counid;
+        return coinid;
     }
 
-    public void setCounid(long counid)
+    public void setCoinid(long coinid)
     {
-        this.counid = counid;
+        this.coinid = coinid;
     }
 
     public String getName()
