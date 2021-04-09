@@ -1,11 +1,13 @@
 package com.lambdaschool.piggybank.controllers;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import com.lambdaschool.piggybank.models.Coin;
 import com.lambdaschool.piggybank.repositories.CoinRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -32,20 +34,36 @@ public class CoinController
     @GetMapping(value = "/total", produces = "application/json")
     public ResponseEntity<?> getTotal()
     {
-        List<Coin> coinList = new ArrayList<>();
-
+       List<Coin> coinList = new ArrayList<>();
         coinRepository.findAll().iterator().forEachRemaining(coinList::add);
 
-        //    coins (coinid, name, nameplural, value, quantity)
-        for (Coin c : coinList) {
-            if (c.getQuantity() > 1 ){
-                
+        double total = 0;
+        for (Coin c : coinList)
+            {
+            total += (double)(c.getQuantity()* c.getValue());
+            if(c.getQuantity()>1)
+            {
+                System.out.println(c.getNameplural() + " " + c.getQuantity());
+            }
+            else {
+                System.out.println(c.getName() + " " + c.getQuantity());
+            }
+            }
+        System.out.println("The piggy bank holds " + total);
+        return new ResponseEntity<>(total,HttpStatus.OK);
+    }
+
+    //not using this function in the challenge
+    private List<Coin> filteredCoins(List<Coin> coinList, CheckCoins tester)
+    {
+        List<Coin> rtnList = new ArrayList<>();
+
+        for (Coin c: coinList) {
+            if (tester.test(c)) {
+                rtnList.add(c);
             }
         }
-
-
-
-        return new ResponseEntity<>(coinList, HttpStatus.OK);
+        return rtnList;
     }
 
 }
