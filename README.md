@@ -1,5 +1,7 @@
 # WEB Java Fundamentals Sprint Challenge
 
+//test for codegrade ;lakjsdf;lkasjdf ;akjds;alksjdf
+
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
 This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored **Java Fundamentals**. During this sprint, you studied **Java Fundamentals*. In your challenge this week, you will demonstrate your mastery of these skills by creating **a Java Spring Database Application using Object Oriented Programming**.
@@ -20,7 +22,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Interview Questions
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. 
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
 2. Explain how you connected your solution to a database, including what code was necessary for this task.
